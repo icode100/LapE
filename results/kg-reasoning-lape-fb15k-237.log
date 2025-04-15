@@ -1,0 +1,1123 @@
+10.3s 1 Collecting tensorboardX
+10.4s 2 Downloading tensorboardX-2.6.2.2-py2.py3-none-any.whl.metadata (5.8 kB)
+10.4s 3 Requirement already satisfied: numpy in /usr/local/lib/python3.10/dist-packages (from tensorboardX) (1.26.4)
+10.4s 4 Requirement already satisfied: packaging in /usr/local/lib/python3.10/dist-packages (from tensorboardX) (24.2)
+10.4s 5 Requirement already satisfied: protobuf>=3.20 in /usr/local/lib/python3.10/dist-packages (from tensorboardX) (3.20.3)
+10.4s 6 Requirement already satisfied: mkl_fft in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (1.3.8)
+10.4s 7 Requirement already satisfied: mkl_random in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (1.2.4)
+10.4s 8 Requirement already satisfied: mkl_umath in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (0.1.1)
+10.4s 9 Requirement already satisfied: mkl in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (2025.0.1)
+10.4s 10 Requirement already satisfied: tbb4py in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (2022.0.0)
+10.4s 11 Requirement already satisfied: mkl-service in /usr/local/lib/python3.10/dist-packages (from numpy->tensorboardX) (2.4.1)
+10.4s 12 Requirement already satisfied: intel-openmp>=2024 in /usr/local/lib/python3.10/dist-packages (from mkl->numpy->tensorboardX) (2024.2.0)
+10.4s 13 Requirement already satisfied: tbb==2022.* in /usr/local/lib/python3.10/dist-packages (from mkl->numpy->tensorboardX) (2022.0.0)
+10.4s 14 Requirement already satisfied: tcmlib==1.* in /usr/local/lib/python3.10/dist-packages (from tbb==2022.*->mkl->numpy->tensorboardX) (1.2.0)
+10.4s 15 Requirement already satisfied: intel-cmplr-lib-rt in /usr/local/lib/python3.10/dist-packages (from mkl_umath->numpy->tensorboardX) (2024.2.0)
+10.4s 16 Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.10/dist-packages (from intel-openmp>=2024->mkl->numpy->tensorboardX) (2024.2.0)
+10.4s 17 Downloading tensorboardX-2.6.2.2-py2.py3-none-any.whl (101 kB)
+10.4s 18 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.7/101.7 kB 3.5 MB/s eta 0:00:00
+13.6s 19 Installing collected packages: tensorboardX
+13.8s 20 Successfully installed tensorboardX-2.6.2.2
+14.0s 21 tensorboardX installed.
+29.8s 22 2025-03-24 13:08:30,375 INFO     ---------------------------------------------------------------------------------------------
+29.8s 23 2025-03-24 13:08:30,375 INFO     Geo: laplace
+29.8s 24 2025-03-24 13:08:30,376 INFO     seed: 42
+29.8s 25 2025-03-24 13:08:30,377 INFO     Data Path: /kaggle/input/kg-data/FB15k-237-betae
+29.8s 26 2025-03-24 13:08:30,377 INFO     #entity: 14505
+29.8s 27 2025-03-24 13:08:30,378 INFO     #relation: 474
+29.8s 28 2025-03-24 13:08:30,379 INFO     #max steps: 30100
+29.8s 29 2025-03-24 13:08:30,379 INFO     Evaluate unions using: DNF
+29.8s 30 2025-03-24 13:08:30,380 INFO     loading data
+30.0s 31 overwriting args.save_path
+30.0s 32 logging to logs/FB15k-237-betae/1p.2p.3p.2i.3i.ip.pi.2in.3in.inp.pin.pni.2u.up/laplace/g-60.0-mode-laplace/2025.03.24-13:08:30
+66.7s 33 2025-03-24 13:09:07,262 INFO     Training info:
+66.7s 34 2025-03-24 13:09:07,263 INFO     1p: 149689
+66.7s 35 2025-03-24 13:09:07,264 INFO     2p: 149689
+66.7s 36 2025-03-24 13:09:07,264 INFO     3p: 149689
+66.7s 37 2025-03-24 13:09:07,266 INFO     2i: 149689
+66.7s 38 2025-03-24 13:09:07,266 INFO     3i: 149689
+66.7s 39 2025-03-24 13:09:07,267 INFO     2in: 14968
+66.7s 40 2025-03-24 13:09:07,268 INFO     3in: 14968
+66.7s 41 2025-03-24 13:09:07,268 INFO     inp: 14968
+66.7s 42 2025-03-24 13:09:07,269 INFO     pin: 14968
+66.7s 43 2025-03-24 13:09:07,270 INFO     pni: 14968
+66.7s 44 2025-03-24 13:09:07,270 INFO     2u-DNF: 5000
+66.9s 45 2025-03-24 13:09:07,271 INFO     up-DNF: 5000
+68.2s 46 2025-03-24 13:09:08,767 INFO     Validation info:
+68.2s 47 2025-03-24 13:09:08,768 INFO     1p: 20094
+68.2s 48 2025-03-24 13:09:08,768 INFO     2p: 5000
+68.2s 49 2025-03-24 13:09:08,769 INFO     3p: 5000
+68.2s 50 2025-03-24 13:09:08,770 INFO     2i: 5000
+68.2s 51 2025-03-24 13:09:08,772 INFO     3i: 5000
+68.2s 52 2025-03-24 13:09:08,773 INFO     ip: 5000
+68.2s 53 2025-03-24 13:09:08,773 INFO     pi: 5000
+68.2s 54 2025-03-24 13:09:08,774 INFO     2in: 5000
+68.2s 55 2025-03-24 13:09:08,775 INFO     3in: 5000
+68.2s 56 2025-03-24 13:09:08,775 INFO     inp: 5000
+68.2s 57 2025-03-24 13:09:08,776 INFO     pin: 5000
+68.2s 58 2025-03-24 13:09:08,777 INFO     pni: 5000
+68.2s 59 2025-03-24 13:09:08,777 INFO     2u-DNF: 5000
+68.2s 60 2025-03-24 13:09:08,778 INFO     up-DNF: 5000
+68.3s 61 2025-03-24 13:09:08,806 INFO     Test info:
+68.3s 62 2025-03-24 13:09:08,807 INFO     1p: 22804
+68.3s 63 2025-03-24 13:09:08,808 INFO     2p: 5000
+68.3s 64 2025-03-24 13:09:08,808 INFO     3p: 5000
+68.3s 65 2025-03-24 13:09:08,809 INFO     2i: 5000
+68.3s 66 2025-03-24 13:09:08,811 INFO     3i: 5000
+68.3s 67 2025-03-24 13:09:08,812 INFO     ip: 5000
+68.3s 68 2025-03-24 13:09:08,813 INFO     pi: 5000
+68.3s 69 2025-03-24 13:09:08,814 INFO     2in: 5000
+68.3s 70 2025-03-24 13:09:08,815 INFO     3in: 5000
+68.3s 71 2025-03-24 13:09:08,816 INFO     inp: 5000
+68.3s 72 2025-03-24 13:09:08,816 INFO     pin: 5000
+68.3s 73 2025-03-24 13:09:08,817 INFO     pni: 5000
+68.3s 74 2025-03-24 13:09:08,818 INFO     2u-DNF: 5000
+68.3s 75 2025-03-24 13:09:08,818 INFO     up-DNF: 5000
+69.2s 76 2025-03-24 13:09:09,776 INFO     Model Parameter Configuration:
+69.2s 77 2025-03-24 13:09:09,777 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+69.2s 78 2025-03-24 13:09:09,778 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+69.2s 79 2025-03-24 13:09:09,780 INFO     Parameter entity_embedding: torch.Size([14505, 1600]), require_grad = True
+69.2s 80 2025-03-24 13:09:09,782 INFO     Parameter relation_embedding: torch.Size([474, 800]), require_grad = True
+69.2s 81 2025-03-24 13:09:09,784 INFO     Parameter mu_relation: torch.Size([474, 800]), require_grad = True
+69.2s 82 2025-03-24 13:09:09,785 INFO     Parameter b_relation: torch.Size([474, 800]), require_grad = True
+69.2s 83 2025-03-24 13:09:09,786 INFO     Parameter modulus: torch.Size([1]), require_grad = True
+69.2s 84 2025-03-24 13:09:09,789 INFO     Parameter center_net.layer_mu1.weight: torch.Size([800, 1600]), require_grad = True
+69.2s 85 2025-03-24 13:09:09,790 INFO     Parameter center_net.layer_mu1.bias: torch.Size([800]), require_grad = True
+69.2s 86 2025-03-24 13:09:09,795 INFO     Parameter center_net.layer_mu2.weight: torch.Size([800, 800]), require_grad = True
+69.2s 87 2025-03-24 13:09:09,798 INFO     Parameter center_net.layer_mu2.bias: torch.Size([800]), require_grad = True
+69.2s 88 2025-03-24 13:09:09,799 INFO     Parameter center_net.layer_b1.weight: torch.Size([800, 1600]), require_grad = True
+69.2s 89 2025-03-24 13:09:09,801 INFO     Parameter center_net.layer_b1.bias: torch.Size([800]), require_grad = True
+69.2s 90 2025-03-24 13:09:09,802 INFO     Parameter center_net.layer_b2.weight: torch.Size([800, 800]), require_grad = True
+69.3s 91 2025-03-24 13:09:09,803 INFO     Parameter center_net.layer_b2.bias: torch.Size([800]), require_grad = True
+69.3s 92 2025-03-24 13:09:09,803 INFO     Parameter projection_net.layer_mu1.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 93 2025-03-24 13:09:09,804 INFO     Parameter projection_net.layer_mu1.bias: torch.Size([1600]), require_grad = True
+69.3s 94 2025-03-24 13:09:09,805 INFO     Parameter projection_net.layer_mu0.weight: torch.Size([800, 1600]), require_grad = True
+69.3s 95 2025-03-24 13:09:09,806 INFO     Parameter projection_net.layer_mu0.bias: torch.Size([800]), require_grad = True
+69.3s 96 2025-03-24 13:09:09,806 INFO     Parameter projection_net.layer_b1.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 97 2025-03-24 13:09:09,807 INFO     Parameter projection_net.layer_b1.bias: torch.Size([1600]), require_grad = True
+69.3s 98 2025-03-24 13:09:09,808 INFO     Parameter projection_net.layer_b0.weight: torch.Size([800, 1600]), require_grad = True
+69.3s 99 2025-03-24 13:09:09,810 INFO     Parameter projection_net.layer_b0.bias: torch.Size([800]), require_grad = True
+69.3s 100 2025-03-24 13:09:09,811 INFO     Parameter projection_net.layer_mu2.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 101 2025-03-24 13:09:09,812 INFO     Parameter projection_net.layer_mu2.bias: torch.Size([1600]), require_grad = True
+69.3s 102 2025-03-24 13:09:09,814 INFO     Parameter projection_net.layer_b2.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 103 2025-03-24 13:09:09,815 INFO     Parameter projection_net.layer_b2.bias: torch.Size([1600]), require_grad = True
+69.3s 104 2025-03-24 13:09:09,815 INFO     Parameter projection_net.layer_mu3.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 105 2025-03-24 13:09:09,816 INFO     Parameter projection_net.layer_mu3.bias: torch.Size([1600]), require_grad = True
+69.3s 106 2025-03-24 13:09:09,817 INFO     Parameter projection_net.layer_b3.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 107 2025-03-24 13:09:09,818 INFO     Parameter projection_net.layer_b3.bias: torch.Size([1600]), require_grad = True
+69.3s 108 2025-03-24 13:09:09,820 INFO     Parameter projection_net.layer_mu4.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 109 2025-03-24 13:09:09,821 INFO     Parameter projection_net.layer_mu4.bias: torch.Size([1600]), require_grad = True
+69.3s 110 2025-03-24 13:09:09,822 INFO     Parameter projection_net.layer_b4.weight: torch.Size([1600, 1600]), require_grad = True
+69.3s 111 2025-03-24 13:09:09,823 INFO     Parameter projection_net.layer_b4.bias: torch.Size([1600]), require_grad = True
+69.3s 112 2025-03-24 13:09:09,823 INFO     Parameter union_net.layer_mu1.weight: torch.Size([800, 1600]), require_grad = True
+69.3s 113 2025-03-24 13:09:09,824 INFO     Parameter union_net.layer_mu1.bias: torch.Size([800]), require_grad = True
+69.3s 114 2025-03-24 13:09:09,825 INFO     Parameter union_net.layer_mu2.weight: torch.Size([400, 800]), require_grad = True
+69.3s 115 2025-03-24 13:09:09,827 INFO     Parameter union_net.layer_mu2.bias: torch.Size([400]), require_grad = True
+69.3s 116 2025-03-24 13:09:09,828 INFO     Parameter union_net.layer_mu3.weight: torch.Size([800, 400]), require_grad = True
+69.3s 117 2025-03-24 13:09:09,829 INFO     Parameter union_net.layer_mu3.bias: torch.Size([800]), require_grad = True
+69.3s 118 2025-03-24 13:09:09,830 INFO     Parameter union_net.layer_b1.weight: torch.Size([800, 1600]), require_grad = True
+69.3s 119 2025-03-24 13:09:09,830 INFO     Parameter union_net.layer_b1.bias: torch.Size([800]), require_grad = True
+69.3s 120 2025-03-24 13:09:09,832 INFO     Parameter union_net.layer_b2.weight: torch.Size([400, 800]), require_grad = True
+69.3s 121 2025-03-24 13:09:09,833 INFO     Parameter union_net.layer_b2.bias: torch.Size([400]), require_grad = True
+69.3s 122 2025-03-24 13:09:09,834 INFO     Parameter union_net.layer_b3.weight: torch.Size([800, 400]), require_grad = True
+69.3s 123 2025-03-24 13:09:09,835 INFO     Parameter union_net.layer_b3.bias: torch.Size([800]), require_grad = True
+69.3s 124 2025-03-24 13:09:09,836 INFO     Parameter Number: 55087201
+73.3s 125 2025-03-24 13:09:13,881 INFO     Randomly Initializing laplace Model...
+73.3s 126 2025-03-24 13:09:13,882 INFO     Using Laplace-based embeddings for KG reasoning.
+73.3s 127 2025-03-24 13:09:13,882 INFO     tasks = 1p.2p.3p.2i.3i.ip.pi.2in.3in.inp.pin.pni.2u.up
+73.3s 128 2025-03-24 13:09:13,883 INFO     init_step = 0
+73.3s 129 2025-03-24 13:09:13,883 INFO     Start Training...
+73.3s 130 2025-03-24 13:09:13,884 INFO     learning_rate = 0.000100
+73.3s 131 2025-03-24 13:09:13,885 INFO     batch_size = 512
+73.3s 132 2025-03-24 13:09:13,885 INFO     hidden_dim = 800
+73.3s 133 2025-03-24 13:09:13,886 INFO     gamma = 60.000000
+77.0s 134 2025-03-24 13:09:17,544 INFO     Training average positive_sample_loss at step 0: 128.654922
+77.0s 135 2025-03-24 13:09:17,546 INFO     Training average negative_sample_loss at step 0: 0.000000
+77.0s 136 2025-03-24 13:09:17,547 INFO     Training average loss at step 0: 64.327461
+123.6s 137 2025-03-24 13:10:04,093 INFO     Training average positive_sample_loss at step 100: 106.369352
+123.6s 138 2025-03-24 13:10:04,094 INFO     Training average negative_sample_loss at step 100: 0.000011
+123.6s 139 2025-03-24 13:10:04,095 INFO     Training average loss at step 100: 53.184682
+171.1s 140 2025-03-24 13:10:51,615 INFO     Training average positive_sample_loss at step 200: 87.513384
+171.1s 141 2025-03-24 13:10:51,616 INFO     Training average negative_sample_loss at step 200: 0.000031
+171.1s 142 2025-03-24 13:10:51,617 INFO     Training average loss at step 200: 43.756707
+219.4s 143 2025-03-24 13:11:39,951 INFO     Training average positive_sample_loss at step 300: 75.599641
+219.4s 144 2025-03-24 13:11:39,952 INFO     Training average negative_sample_loss at step 300: 0.000044
+219.4s 145 2025-03-24 13:11:39,953 INFO     Training average loss at step 300: 37.799842
+267.4s 146 2025-03-24 13:12:27,985 INFO     Training average positive_sample_loss at step 400: 65.417768
+267.4s 147 2025-03-24 13:12:27,986 INFO     Training average negative_sample_loss at step 400: 0.000050
+267.5s 148 2025-03-24 13:12:27,987 INFO     Training average loss at step 400: 32.708909
+316.4s 149 2025-03-24 13:13:16,963 INFO     Training average positive_sample_loss at step 500: 56.646537
+316.4s 150 2025-03-24 13:13:16,965 INFO     Training average negative_sample_loss at step 500: 0.000077
+316.4s 151 2025-03-24 13:13:16,966 INFO     Training average loss at step 500: 28.323307
+364.5s 152 2025-03-24 13:14:05,055 INFO     Training average positive_sample_loss at step 600: 48.734643
+364.5s 153 2025-03-24 13:14:05,056 INFO     Training average negative_sample_loss at step 600: 0.000176
+364.5s 154 2025-03-24 13:14:05,057 INFO     Training average loss at step 600: 24.367410
+412.5s 155 2025-03-24 13:14:53,054 INFO     Training average positive_sample_loss at step 700: 42.513257
+412.5s 156 2025-03-24 13:14:53,056 INFO     Training average negative_sample_loss at step 700: 0.000503
+412.5s 157 2025-03-24 13:14:53,056 INFO     Training average loss at step 700: 21.256880
+461.4s 158 2025-03-24 13:15:41,930 INFO     Training average positive_sample_loss at step 800: 36.805406
+461.4s 159 2025-03-24 13:15:41,933 INFO     Training average negative_sample_loss at step 800: 0.001158
+461.4s 160 2025-03-24 13:15:41,934 INFO     Training average loss at step 800: 18.403282
+510.5s 161 2025-03-24 13:16:31,024 INFO     Training average positive_sample_loss at step 900: 31.620603
+510.5s 162 2025-03-24 13:16:31,027 INFO     Training average negative_sample_loss at step 900: 0.002480
+510.5s 163 2025-03-24 13:16:31,028 INFO     Training average loss at step 900: 15.811542
+558.7s 164 2025-03-24 13:17:19,211 INFO     Training average positive_sample_loss at step 1000: 27.673137
+558.7s 165 2025-03-24 13:17:19,212 INFO     Training average negative_sample_loss at step 1000: 0.004405
+558.7s 166 2025-03-24 13:17:19,213 INFO     Training average loss at step 1000: 13.838771
+606.8s 167 2025-03-24 13:18:07,309 INFO     Training average positive_sample_loss at step 1100: 23.697549
+606.8s 168 2025-03-24 13:18:07,310 INFO     Training average negative_sample_loss at step 1100: 0.007399
+606.8s 169 2025-03-24 13:18:07,311 INFO     Training average loss at step 1100: 11.852474
+654.8s 170 2025-03-24 13:18:55,293 INFO     Training average positive_sample_loss at step 1200: 20.283036
+654.8s 171 2025-03-24 13:18:55,294 INFO     Training average negative_sample_loss at step 1200: 0.011461
+654.8s 172 2025-03-24 13:18:55,295 INFO     Training average loss at step 1200: 10.147248
+702.8s 173 2025-03-24 13:19:43,360 INFO     Training average positive_sample_loss at step 1300: 17.483875
+702.8s 174 2025-03-24 13:19:43,361 INFO     Training average negative_sample_loss at step 1300: 0.016049
+702.8s 175 2025-03-24 13:19:43,362 INFO     Training average loss at step 1300: 8.749962
+751.8s 176 2025-03-24 13:20:32,315 INFO     Training average positive_sample_loss at step 1400: 14.724690
+751.8s 177 2025-03-24 13:20:32,318 INFO     Training average negative_sample_loss at step 1400: 0.021316
+751.8s 178 2025-03-24 13:20:32,319 INFO     Training average loss at step 1400: 7.373003
+799.8s 179 2025-03-24 13:21:20,360 INFO     Training average positive_sample_loss at step 1500: 13.628036
+799.8s 180 2025-03-24 13:21:20,361 INFO     Training average negative_sample_loss at step 1500: 0.032120
+799.8s 181 2025-03-24 13:21:20,362 INFO     Training average loss at step 1500: 6.830078
+848.4s 182 2025-03-24 13:22:08,958 INFO     Training average positive_sample_loss at step 1600: 10.623331
+848.4s 183 2025-03-24 13:22:08,961 INFO     Training average negative_sample_loss at step 1600: 0.038520
+848.4s 184 2025-03-24 13:22:08,961 INFO     Training average loss at step 1600: 5.330925
+896.2s 185 2025-03-24 13:22:56,750 INFO     Training average positive_sample_loss at step 1700: 8.907816
+896.2s 186 2025-03-24 13:22:56,751 INFO     Training average negative_sample_loss at step 1700: 0.045229
+896.2s 187 2025-03-24 13:22:56,751 INFO     Training average loss at step 1700: 4.476522
+945.0s 188 2025-03-24 13:23:45,523 INFO     Training average positive_sample_loss at step 1800: 7.286521
+945.0s 189 2025-03-24 13:23:45,525 INFO     Training average negative_sample_loss at step 1800: 0.053978
+945.0s 190 2025-03-24 13:23:45,526 INFO     Training average loss at step 1800: 3.670249
+992.9s 191 2025-03-24 13:24:33,459 INFO     Training average positive_sample_loss at step 1900: 6.006662
+992.9s 192 2025-03-24 13:24:33,460 INFO     Training average negative_sample_loss at step 1900: 0.063345
+992.9s 193 2025-03-24 13:24:33,460 INFO     Training average loss at step 1900: 3.035004
+1040.7s 194 2025-03-24 13:25:21,254 INFO     Training average positive_sample_loss at step 2000: 4.915759
+1040.7s 195 2025-03-24 13:25:21,255 INFO     Training average negative_sample_loss at step 2000: 0.072533
+1040.7s 196 2025-03-24 13:25:21,256 INFO     Training average loss at step 2000: 2.494146
+1088.7s 197 2025-03-24 13:26:09,193 INFO     Training average positive_sample_loss at step 2100: 3.886697
+1088.7s 198 2025-03-24 13:26:09,194 INFO     Training average negative_sample_loss at step 2100: 0.082217
+1088.7s 199 2025-03-24 13:26:09,195 INFO     Training average loss at step 2100: 1.984457
+1137.3s 200 2025-03-24 13:26:57,824 INFO     Training average positive_sample_loss at step 2200: 3.245711
+1137.3s 201 2025-03-24 13:26:57,827 INFO     Training average negative_sample_loss at step 2200: 0.090299
+1137.3s 202 2025-03-24 13:26:57,828 INFO     Training average loss at step 2200: 1.668005
+1186.2s 203 2025-03-24 13:27:46,776 INFO     Training average positive_sample_loss at step 2300: 2.564174
+1186.2s 204 2025-03-24 13:27:46,779 INFO     Training average negative_sample_loss at step 2300: 0.098044
+1186.3s 205 2025-03-24 13:27:46,780 INFO     Training average loss at step 2300: 1.331109
+1234.4s 206 2025-03-24 13:28:34,879 INFO     Training average positive_sample_loss at step 2400: 2.174977
+1234.4s 207 2025-03-24 13:28:34,880 INFO     Training average negative_sample_loss at step 2400: 0.104678
+1234.4s 208 2025-03-24 13:28:34,880 INFO     Training average loss at step 2400: 1.139827
+1282.5s 209 2025-03-24 13:29:23,005 INFO     Training average positive_sample_loss at step 2500: 1.722913
+1282.5s 210 2025-03-24 13:29:23,006 INFO     Training average negative_sample_loss at step 2500: 0.110195
+1282.5s 211 2025-03-24 13:29:23,007 INFO     Training average loss at step 2500: 0.916554
+1330.5s 212 2025-03-24 13:30:11,035 INFO     Training average positive_sample_loss at step 2600: 1.471689
+1330.5s 213 2025-03-24 13:30:11,036 INFO     Training average negative_sample_loss at step 2600: 0.113701
+1330.5s 214 2025-03-24 13:30:11,037 INFO     Training average loss at step 2600: 0.792695
+1379.2s 215 2025-03-24 13:30:59,739 INFO     Training average positive_sample_loss at step 2700: 1.177384
+1379.2s 216 2025-03-24 13:30:59,741 INFO     Training average negative_sample_loss at step 2700: 0.117902
+1379.2s 217 2025-03-24 13:30:59,742 INFO     Training average loss at step 2700: 0.647643
+1427.2s 218 2025-03-24 13:31:47,754 INFO     Training average positive_sample_loss at step 2800: 1.030749
+1427.2s 219 2025-03-24 13:31:47,755 INFO     Training average negative_sample_loss at step 2800: 0.119992
+1427.2s 220 2025-03-24 13:31:47,756 INFO     Training average loss at step 2800: 0.575370
+1475.1s 221 2025-03-24 13:32:35,625 INFO     Training average positive_sample_loss at step 2900: 0.892051
+1475.1s 222 2025-03-24 13:32:35,626 INFO     Training average negative_sample_loss at step 2900: 0.119833
+1475.1s 223 2025-03-24 13:32:35,627 INFO     Training average loss at step 2900: 0.505942
+1522.9s 224 2025-03-24 13:33:23,412 INFO     Training average positive_sample_loss at step 3000: 0.771001
+1522.9s 225 2025-03-24 13:33:23,413 INFO     Training average negative_sample_loss at step 3000: 0.119936
+1522.9s 226 2025-03-24 13:33:23,413 INFO     Training average loss at step 3000: 0.445469
+1572.5s 227 2025-03-24 13:34:12,990 INFO     Training average positive_sample_loss at step 3100: 0.707634
+1572.5s 228 2025-03-24 13:34:12,993 INFO     Training average negative_sample_loss at step 3100: 0.118351
+1572.5s 229 2025-03-24 13:34:12,993 INFO     Training average loss at step 3100: 0.412993
+1620.5s 230 2025-03-24 13:35:00,999 INFO     Training average positive_sample_loss at step 3200: 0.584708
+1620.5s 231 2025-03-24 13:35:01,000 INFO     Training average negative_sample_loss at step 3200: 0.117332
+1620.5s 232 2025-03-24 13:35:01,001 INFO     Training average loss at step 3200: 0.351020
+1668.3s 233 2025-03-24 13:35:48,855 INFO     Training average positive_sample_loss at step 3300: 0.531222
+1668.3s 234 2025-03-24 13:35:48,856 INFO     Training average negative_sample_loss at step 3300: 0.114177
+1668.3s 235 2025-03-24 13:35:48,856 INFO     Training average loss at step 3300: 0.322699
+1716.3s 236 2025-03-24 13:36:36,858 INFO     Training average positive_sample_loss at step 3400: 0.649959
+1716.3s 237 2025-03-24 13:36:36,859 INFO     Training average negative_sample_loss at step 3400: 0.115234
+1716.3s 238 2025-03-24 13:36:36,860 INFO     Training average loss at step 3400: 0.382597
+1764.3s 239 2025-03-24 13:37:24,808 INFO     Training average positive_sample_loss at step 3500: 0.428166
+1764.3s 240 2025-03-24 13:37:24,809 INFO     Training average negative_sample_loss at step 3500: 0.112222
+1764.3s 241 2025-03-24 13:37:24,810 INFO     Training average loss at step 3500: 0.270194
+1813.0s 242 2025-03-24 13:38:13,561 INFO     Training average positive_sample_loss at step 3600: 0.419959
+1813.0s 243 2025-03-24 13:38:13,564 INFO     Training average negative_sample_loss at step 3600: 0.109229
+1813.0s 244 2025-03-24 13:38:13,565 INFO     Training average loss at step 3600: 0.264594
+1861.2s 245 2025-03-24 13:39:01,715 INFO     Training average positive_sample_loss at step 3700: 0.366607
+1861.2s 246 2025-03-24 13:39:01,716 INFO     Training average negative_sample_loss at step 3700: 0.107584
+1861.2s 247 2025-03-24 13:39:01,717 INFO     Training average loss at step 3700: 0.237095
+1910.1s 248 2025-03-24 13:39:50,666 INFO     Training average positive_sample_loss at step 3800: 0.330953
+1910.1s 249 2025-03-24 13:39:50,669 INFO     Training average negative_sample_loss at step 3800: 0.107261
+1910.1s 250 2025-03-24 13:39:50,670 INFO     Training average loss at step 3800: 0.219107
+1958.3s 251 2025-03-24 13:40:38,859 INFO     Training average positive_sample_loss at step 3900: 0.295854
+1958.3s 252 2025-03-24 13:40:38,860 INFO     Training average negative_sample_loss at step 3900: 0.104240
+1958.3s 253 2025-03-24 13:40:38,860 INFO     Training average loss at step 3900: 0.200047
+2007.2s 254 2025-03-24 13:41:27,761 INFO     Training average positive_sample_loss at step 4000: 0.317920
+2007.2s 255 2025-03-24 13:41:27,764 INFO     Training average negative_sample_loss at step 4000: 0.101795
+2007.2s 256 2025-03-24 13:41:27,765 INFO     Training average loss at step 4000: 0.209858
+2055.4s 257 2025-03-24 13:42:15,929 INFO     Training average positive_sample_loss at step 4100: 0.286887
+2055.4s 258 2025-03-24 13:42:15,930 INFO     Training average negative_sample_loss at step 4100: 0.101457
+2055.4s 259 2025-03-24 13:42:15,931 INFO     Training average loss at step 4100: 0.194172
+2103.4s 260 2025-03-24 13:43:03,970 INFO     Training average positive_sample_loss at step 4200: 0.266810
+2103.4s 261 2025-03-24 13:43:03,971 INFO     Training average negative_sample_loss at step 4200: 0.099845
+2103.4s 262 2025-03-24 13:43:03,972 INFO     Training average loss at step 4200: 0.183328
+2151.4s 263 2025-03-24 13:43:51,898 INFO     Training average positive_sample_loss at step 4300: 0.225301
+2151.4s 264 2025-03-24 13:43:51,899 INFO     Training average negative_sample_loss at step 4300: 0.099568
+2151.4s 265 2025-03-24 13:43:51,900 INFO     Training average loss at step 4300: 0.162435
+2200.4s 266 2025-03-24 13:44:40,945 INFO     Training average positive_sample_loss at step 4400: 0.226793
+2200.4s 267 2025-03-24 13:44:40,949 INFO     Training average negative_sample_loss at step 4400: 0.097282
+2200.4s 268 2025-03-24 13:44:40,950 INFO     Training average loss at step 4400: 0.162038
+2248.5s 269 2025-03-24 13:45:29,071 INFO     Training average positive_sample_loss at step 4500: 0.206004
+2248.5s 270 2025-03-24 13:45:29,072 INFO     Training average negative_sample_loss at step 4500: 0.095012
+2248.5s 271 2025-03-24 13:45:29,072 INFO     Training average loss at step 4500: 0.150508
+2297.4s 272 2025-03-24 13:46:17,935 INFO     Training average positive_sample_loss at step 4600: 0.212554
+2297.4s 273 2025-03-24 13:46:17,937 INFO     Training average negative_sample_loss at step 4600: 0.095292
+2297.4s 274 2025-03-24 13:46:17,938 INFO     Training average loss at step 4600: 0.153923
+2345.4s 275 2025-03-24 13:47:05,914 INFO     Training average positive_sample_loss at step 4700: 0.171937
+2345.4s 276 2025-03-24 13:47:05,915 INFO     Training average negative_sample_loss at step 4700: 0.094161
+2345.4s 277 2025-03-24 13:47:05,915 INFO     Training average loss at step 4700: 0.133049
+2393.3s 278 2025-03-24 13:47:53,860 INFO     Training average positive_sample_loss at step 4800: 0.167990
+2393.3s 279 2025-03-24 13:47:53,861 INFO     Training average negative_sample_loss at step 4800: 0.090681
+2393.3s 280 2025-03-24 13:47:53,862 INFO     Training average loss at step 4800: 0.129336
+2442.2s 281 2025-03-24 13:48:42,736 INFO     Training average positive_sample_loss at step 4900: 0.160380
+2442.2s 282 2025-03-24 13:48:42,738 INFO     Training average negative_sample_loss at step 4900: 0.090009
+2442.2s 283 2025-03-24 13:48:42,739 INFO     Training average loss at step 4900: 0.125194
+2490.2s 284 2025-03-24 13:49:30,752 INFO     Training average positive_sample_loss at step 5000: 0.141633
+2490.2s 285 2025-03-24 13:49:30,753 INFO     Training average negative_sample_loss at step 5000: 0.088778
+2490.2s 286 2025-03-24 13:49:30,754 INFO     Training average loss at step 5000: 0.115205
+2538.3s 287 2025-03-24 13:50:18,869 INFO     Training average positive_sample_loss at step 5100: 0.150284
+2538.3s 288 2025-03-24 13:50:18,870 INFO     Training average negative_sample_loss at step 5100: 0.087551
+2538.3s 289 2025-03-24 13:50:18,871 INFO     Training average loss at step 5100: 0.118917
+2586.3s 290 2025-03-24 13:51:06,856 INFO     Training average positive_sample_loss at step 5200: 0.134867
+2586.3s 291 2025-03-24 13:51:06,857 INFO     Training average negative_sample_loss at step 5200: 0.088265
+2586.3s 292 2025-03-24 13:51:06,857 INFO     Training average loss at step 5200: 0.111566
+2636.0s 293 2025-03-24 13:51:56,522 INFO     Training average positive_sample_loss at step 5300: 0.133676
+2636.0s 294 2025-03-24 13:51:56,524 INFO     Training average negative_sample_loss at step 5300: 0.086307
+2636.0s 295 2025-03-24 13:51:56,525 INFO     Training average loss at step 5300: 0.109992
+2684.1s 296 2025-03-24 13:52:44,577 INFO     Training average positive_sample_loss at step 5400: 0.154744
+2684.1s 297 2025-03-24 13:52:44,578 INFO     Training average negative_sample_loss at step 5400: 0.083790
+2684.1s 298 2025-03-24 13:52:44,578 INFO     Training average loss at step 5400: 0.119267
+2732.1s 299 2025-03-24 13:53:32,622 INFO     Training average positive_sample_loss at step 5500: 0.128407
+2732.1s 300 2025-03-24 13:53:32,623 INFO     Training average negative_sample_loss at step 5500: 0.083545
+2732.1s 301 2025-03-24 13:53:32,624 INFO     Training average loss at step 5500: 0.105976
+2780.1s 302 2025-03-24 13:54:20,594 INFO     Training average positive_sample_loss at step 5600: 0.137859
+2780.1s 303 2025-03-24 13:54:20,595 INFO     Training average negative_sample_loss at step 5600: 0.083347
+2780.1s 304 2025-03-24 13:54:20,596 INFO     Training average loss at step 5600: 0.110603
+2828.0s 305 2025-03-24 13:55:08,543 INFO     Training average positive_sample_loss at step 5700: 0.119541
+2828.0s 306 2025-03-24 13:55:08,544 INFO     Training average negative_sample_loss at step 5700: 0.081975
+2828.0s 307 2025-03-24 13:55:08,545 INFO     Training average loss at step 5700: 0.100758
+2876.8s 308 2025-03-24 13:55:57,315 INFO     Training average positive_sample_loss at step 5800: 0.102157
+2876.8s 309 2025-03-24 13:55:57,317 INFO     Training average negative_sample_loss at step 5800: 0.080271
+2876.8s 310 2025-03-24 13:55:57,318 INFO     Training average loss at step 5800: 0.091214
+2924.8s 311 2025-03-24 13:56:45,335 INFO     Training average positive_sample_loss at step 5900: 0.101319
+2924.8s 312 2025-03-24 13:56:45,336 INFO     Training average negative_sample_loss at step 5900: 0.079723
+2924.8s 313 2025-03-24 13:56:45,336 INFO     Training average loss at step 5900: 0.090521
+2972.8s 314 2025-03-24 13:57:33,300 INFO     Training average positive_sample_loss at step 6000: 0.104895
+2972.8s 315 2025-03-24 13:57:33,301 INFO     Training average negative_sample_loss at step 6000: 0.078670
+2972.8s 316 2025-03-24 13:57:33,302 INFO     Training average loss at step 6000: 0.091783
+3021.6s 317 2025-03-24 13:58:22,133 INFO     Training average positive_sample_loss at step 6100: 0.116342
+3021.6s 318 2025-03-24 13:58:22,135 INFO     Training average negative_sample_loss at step 6100: 0.078628
+3021.6s 319 2025-03-24 13:58:22,136 INFO     Training average loss at step 6100: 0.097485
+3070.4s 320 2025-03-24 13:59:10,923 INFO     Training average positive_sample_loss at step 6200: 0.098950
+3070.4s 321 2025-03-24 13:59:10,926 INFO     Training average negative_sample_loss at step 6200: 0.076728
+3070.4s 322 2025-03-24 13:59:10,927 INFO     Training average loss at step 6200: 0.087839
+3118.5s 323 2025-03-24 13:59:58,978 INFO     Training average positive_sample_loss at step 6300: 0.100703
+3118.5s 324 2025-03-24 13:59:58,979 INFO     Training average negative_sample_loss at step 6300: 0.074804
+3118.5s 325 2025-03-24 13:59:58,980 INFO     Training average loss at step 6300: 0.087753
+3166.4s 326 2025-03-24 14:00:46,957 INFO     Training average positive_sample_loss at step 6400: 0.093788
+3166.4s 327 2025-03-24 14:00:46,958 INFO     Training average negative_sample_loss at step 6400: 0.075092
+3166.4s 328 2025-03-24 14:00:46,959 INFO     Training average loss at step 6400: 0.084440
+3214.5s 329 2025-03-24 14:01:34,976 INFO     Training average positive_sample_loss at step 6500: 0.089021
+3214.5s 330 2025-03-24 14:01:34,977 INFO     Training average negative_sample_loss at step 6500: 0.074674
+3214.5s 331 2025-03-24 14:01:34,978 INFO     Training average loss at step 6500: 0.081848
+3263.4s 332 2025-03-24 14:02:23,899 INFO     Training average positive_sample_loss at step 6600: 0.085770
+3263.4s 333 2025-03-24 14:02:23,901 INFO     Training average negative_sample_loss at step 6600: 0.074500
+3263.4s 334 2025-03-24 14:02:23,902 INFO     Training average loss at step 6600: 0.080135
+3311.4s 335 2025-03-24 14:03:11,937 INFO     Training average positive_sample_loss at step 6700: 0.075872
+3311.4s 336 2025-03-24 14:03:11,938 INFO     Training average negative_sample_loss at step 6700: 0.072604
+3311.4s 337 2025-03-24 14:03:11,939 INFO     Training average loss at step 6700: 0.074238
+3360.3s 338 2025-03-24 14:04:00,779 INFO     Training average positive_sample_loss at step 6800: 0.077550
+3360.3s 339 2025-03-24 14:04:00,782 INFO     Training average negative_sample_loss at step 6800: 0.072318
+3360.3s 340 2025-03-24 14:04:00,783 INFO     Training average loss at step 6800: 0.074934
+3408.2s 341 2025-03-24 14:04:48,733 INFO     Training average positive_sample_loss at step 6900: 0.084373
+3408.2s 342 2025-03-24 14:04:48,734 INFO     Training average negative_sample_loss at step 6900: 0.069796
+3408.2s 343 2025-03-24 14:04:48,735 INFO     Training average loss at step 6900: 0.077084
+3456.3s 344 2025-03-24 14:05:36,796 INFO     Training average positive_sample_loss at step 7000: 0.090495
+3456.3s 345 2025-03-24 14:05:36,797 INFO     Training average negative_sample_loss at step 7000: 0.070310
+3456.3s 346 2025-03-24 14:05:36,797 INFO     Training average loss at step 7000: 0.080403
+3505.1s 347 2025-03-24 14:06:25,638 INFO     Training average positive_sample_loss at step 7100: 0.074509
+3505.1s 348 2025-03-24 14:06:25,641 INFO     Training average negative_sample_loss at step 7100: 0.068201
+3505.1s 349 2025-03-24 14:06:25,641 INFO     Training average loss at step 7100: 0.071355
+3553.1s 350 2025-03-24 14:07:13,645 INFO     Training average positive_sample_loss at step 7200: 0.077979
+3553.1s 351 2025-03-24 14:07:13,646 INFO     Training average negative_sample_loss at step 7200: 0.067681
+3553.1s 352 2025-03-24 14:07:13,647 INFO     Training average loss at step 7200: 0.072830
+3601.3s 353 2025-03-24 14:08:01,798 INFO     Training average positive_sample_loss at step 7300: 0.080685
+3601.3s 354 2025-03-24 14:08:01,799 INFO     Training average negative_sample_loss at step 7300: 0.066920
+3601.3s 355 2025-03-24 14:08:01,800 INFO     Training average loss at step 7300: 0.073802
+3649.3s 356 2025-03-24 14:08:49,828 INFO     Training average positive_sample_loss at step 7400: 0.072239
+3649.3s 357 2025-03-24 14:08:49,829 INFO     Training average negative_sample_loss at step 7400: 0.067223
+3649.3s 358 2025-03-24 14:08:49,829 INFO     Training average loss at step 7400: 0.069731
+3698.4s 359 2025-03-24 14:09:38,946 INFO     Training average positive_sample_loss at step 7500: 0.069780
+3698.4s 360 2025-03-24 14:09:38,949 INFO     Training average negative_sample_loss at step 7500: 0.066742
+3698.4s 361 2025-03-24 14:09:38,950 INFO     Training average loss at step 7500: 0.068261
+3748.1s 362 2025-03-24 14:10:28,625 INFO     Training average positive_sample_loss at step 7600: 0.058348
+3748.1s 363 2025-03-24 14:10:28,628 INFO     Training average negative_sample_loss at step 7600: 0.064381
+3748.1s 364 2025-03-24 14:10:28,629 INFO     Training average loss at step 7600: 0.061365
+3796.5s 365 2025-03-24 14:11:17,031 INFO     Training average positive_sample_loss at step 7700: 0.068136
+3796.5s 366 2025-03-24 14:11:17,032 INFO     Training average negative_sample_loss at step 7700: 0.064437
+3796.5s 367 2025-03-24 14:11:17,032 INFO     Training average loss at step 7700: 0.066287
+3844.9s 368 2025-03-24 14:12:05,418 INFO     Training average positive_sample_loss at step 7800: 0.065628
+3844.9s 369 2025-03-24 14:12:05,420 INFO     Training average negative_sample_loss at step 7800: 0.064022
+3844.9s 370 2025-03-24 14:12:05,420 INFO     Training average loss at step 7800: 0.064825
+3893.2s 371 2025-03-24 14:12:53,667 INFO     Training average positive_sample_loss at step 7900: 0.069185
+3893.2s 372 2025-03-24 14:12:53,668 INFO     Training average negative_sample_loss at step 7900: 0.064584
+3893.2s 373 2025-03-24 14:12:53,669 INFO     Training average loss at step 7900: 0.066885
+3942.5s 374 2025-03-24 14:13:42,999 INFO     Training average positive_sample_loss at step 8000: 0.065555
+3942.5s 375 2025-03-24 14:13:43,001 INFO     Training average negative_sample_loss at step 8000: 0.062217
+3942.5s 376 2025-03-24 14:13:43,002 INFO     Training average loss at step 8000: 0.063886
+3990.8s 377 2025-03-24 14:14:31,361 INFO     Training average positive_sample_loss at step 8100: 0.061777
+3990.8s 378 2025-03-24 14:14:31,362 INFO     Training average negative_sample_loss at step 8100: 0.061917
+3990.8s 379 2025-03-24 14:14:31,363 INFO     Training average loss at step 8100: 0.061847
+4039.1s 380 2025-03-24 14:15:19,645 INFO     Training average positive_sample_loss at step 8200: 0.056221
+4039.1s 381 2025-03-24 14:15:19,647 INFO     Training average negative_sample_loss at step 8200: 0.061949
+4039.1s 382 2025-03-24 14:15:19,647 INFO     Training average loss at step 8200: 0.059085
+4088.2s 383 2025-03-24 14:16:08,713 INFO     Training average positive_sample_loss at step 8300: 0.061469
+4088.2s 384 2025-03-24 14:16:08,716 INFO     Training average negative_sample_loss at step 8300: 0.061264
+4088.2s 385 2025-03-24 14:16:08,716 INFO     Training average loss at step 8300: 0.061367
+4137.2s 386 2025-03-24 14:16:57,751 INFO     Training average positive_sample_loss at step 8400: 0.055717
+4137.2s 387 2025-03-24 14:16:57,753 INFO     Training average negative_sample_loss at step 8400: 0.060239
+4137.2s 388 2025-03-24 14:16:57,754 INFO     Training average loss at step 8400: 0.057978
+4185.4s 389 2025-03-24 14:17:45,888 INFO     Training average positive_sample_loss at step 8500: 0.061085
+4185.4s 390 2025-03-24 14:17:45,889 INFO     Training average negative_sample_loss at step 8500: 0.059241
+4185.4s 391 2025-03-24 14:17:45,890 INFO     Training average loss at step 8500: 0.060163
+4233.4s 392 2025-03-24 14:18:33,962 INFO     Training average positive_sample_loss at step 8600: 0.056988
+4233.4s 393 2025-03-24 14:18:33,963 INFO     Training average negative_sample_loss at step 8600: 0.059562
+4233.4s 394 2025-03-24 14:18:33,964 INFO     Training average loss at step 8600: 0.058275
+4281.7s 395 2025-03-24 14:19:22,172 INFO     Training average positive_sample_loss at step 8700: 0.050669
+4281.7s 396 2025-03-24 14:19:22,173 INFO     Training average negative_sample_loss at step 8700: 0.059092
+4281.7s 397 2025-03-24 14:19:22,174 INFO     Training average loss at step 8700: 0.054880
+4330.6s 398 2025-03-24 14:20:11,110 INFO     Training average positive_sample_loss at step 8800: 0.060005
+4330.6s 399 2025-03-24 14:20:11,113 INFO     Training average negative_sample_loss at step 8800: 0.057993
+4330.6s 400 2025-03-24 14:20:11,115 INFO     Training average loss at step 8800: 0.058999
+4378.7s 401 2025-03-24 14:20:59,239 INFO     Training average positive_sample_loss at step 8900: 0.054350
+4378.7s 402 2025-03-24 14:20:59,240 INFO     Training average negative_sample_loss at step 8900: 0.055850
+4378.7s 403 2025-03-24 14:20:59,241 INFO     Training average loss at step 8900: 0.055100
+4426.8s 404 2025-03-24 14:21:47,331 INFO     Training average positive_sample_loss at step 9000: 0.049738
+4426.8s 405 2025-03-24 14:21:47,332 INFO     Training average negative_sample_loss at step 9000: 0.056962
+4426.8s 406 2025-03-24 14:21:47,333 INFO     Training average loss at step 9000: 0.053350
+4475.8s 407 2025-03-24 14:22:36,263 INFO     Training average positive_sample_loss at step 9100: 0.043888
+4475.8s 408 2025-03-24 14:22:36,266 INFO     Training average negative_sample_loss at step 9100: 0.056309
+4475.8s 409 2025-03-24 14:22:36,267 INFO     Training average loss at step 9100: 0.050099
+4523.8s 410 2025-03-24 14:23:24,314 INFO     Training average positive_sample_loss at step 9200: 0.050236
+4523.8s 411 2025-03-24 14:23:24,315 INFO     Training average negative_sample_loss at step 9200: 0.056359
+4523.8s 412 2025-03-24 14:23:24,316 INFO     Training average loss at step 9200: 0.053297
+4572.6s 413 2025-03-24 14:24:13,140 INFO     Training average positive_sample_loss at step 9300: 0.052459
+4572.6s 414 2025-03-24 14:24:13,143 INFO     Training average negative_sample_loss at step 9300: 0.055290
+4572.6s 415 2025-03-24 14:24:13,143 INFO     Training average loss at step 9300: 0.053875
+4620.7s 416 2025-03-24 14:25:01,232 INFO     Training average positive_sample_loss at step 9400: 0.048357
+4620.7s 417 2025-03-24 14:25:01,233 INFO     Training average negative_sample_loss at step 9400: 0.054377
+4620.7s 418 2025-03-24 14:25:01,234 INFO     Training average loss at step 9400: 0.051367
+4668.8s 419 2025-03-24 14:25:49,280 INFO     Training average positive_sample_loss at step 9500: 0.045259
+4668.8s 420 2025-03-24 14:25:49,281 INFO     Training average negative_sample_loss at step 9500: 0.054462
+4668.8s 421 2025-03-24 14:25:49,282 INFO     Training average loss at step 9500: 0.049860
+4717.1s 422 2025-03-24 14:26:37,608 INFO     Training average positive_sample_loss at step 9600: 0.046732
+4717.1s 423 2025-03-24 14:26:37,609 INFO     Training average negative_sample_loss at step 9600: 0.054774
+4717.1s 424 2025-03-24 14:26:37,610 INFO     Training average loss at step 9600: 0.050753
+4766.2s 425 2025-03-24 14:27:26,741 INFO     Training average positive_sample_loss at step 9700: 0.040950
+4766.2s 426 2025-03-24 14:27:26,744 INFO     Training average negative_sample_loss at step 9700: 0.052798
+4766.2s 427 2025-03-24 14:27:26,745 INFO     Training average loss at step 9700: 0.046874
+4815.4s 428 2025-03-24 14:28:15,891 INFO     Training average positive_sample_loss at step 9800: 0.041440
+4815.4s 429 2025-03-24 14:28:15,894 INFO     Training average negative_sample_loss at step 9800: 0.052936
+4815.4s 430 2025-03-24 14:28:15,895 INFO     Training average loss at step 9800: 0.047188
+4863.5s 431 2025-03-24 14:29:04,002 INFO     Training average positive_sample_loss at step 9900: 0.048299
+4863.5s 432 2025-03-24 14:29:04,003 INFO     Training average negative_sample_loss at step 9900: 0.052585
+4863.5s 433 2025-03-24 14:29:04,004 INFO     Training average loss at step 9900: 0.050442
+4911.3s 434 2025-03-24 14:29:51,804 INFO     Training average positive_sample_loss at step 10000: 0.043500
+4911.3s 435 2025-03-24 14:29:51,805 INFO     Training average negative_sample_loss at step 10000: 0.052405
+4911.3s 436 2025-03-24 14:29:51,806 INFO     Training average loss at step 10000: 0.047953
+4960.2s 437 2025-03-24 14:30:40,701 INFO     Training average positive_sample_loss at step 10100: 0.046635
+4960.2s 438 2025-03-24 14:30:40,703 INFO     Training average negative_sample_loss at step 10100: 0.052422
+4960.2s 439 2025-03-24 14:30:40,704 INFO     Training average loss at step 10100: 0.049529
+5008.5s 440 2025-03-24 14:31:29,005 INFO     Training average positive_sample_loss at step 10200: 0.038577
+5008.5s 441 2025-03-24 14:31:29,006 INFO     Training average negative_sample_loss at step 10200: 0.050901
+5008.5s 442 2025-03-24 14:31:29,007 INFO     Training average loss at step 10200: 0.044739
+5056.9s 443 2025-03-24 14:32:17,452 INFO     Training average positive_sample_loss at step 10300: 0.044742
+5056.9s 444 2025-03-24 14:32:17,454 INFO     Training average negative_sample_loss at step 10300: 0.050667
+5056.9s 445 2025-03-24 14:32:17,454 INFO     Training average loss at step 10300: 0.047704
+5105.3s 446 2025-03-24 14:33:05,785 INFO     Training average positive_sample_loss at step 10400: 0.043137
+5105.3s 447 2025-03-24 14:33:05,786 INFO     Training average negative_sample_loss at step 10400: 0.050682
+5105.3s 448 2025-03-24 14:33:05,787 INFO     Training average loss at step 10400: 0.046909
+5153.5s 449 2025-03-24 14:33:54,054 INFO     Training average positive_sample_loss at step 10500: 0.041348
+5153.5s 450 2025-03-24 14:33:54,055 INFO     Training average negative_sample_loss at step 10500: 0.050031
+5153.5s 451 2025-03-24 14:33:54,056 INFO     Training average loss at step 10500: 0.045690
+5203.8s 452 2025-03-24 14:34:44,299 INFO     Training average positive_sample_loss at step 10600: 0.039729
+5203.8s 453 2025-03-24 14:34:44,302 INFO     Training average negative_sample_loss at step 10600: 0.049997
+5203.8s 454 2025-03-24 14:34:44,302 INFO     Training average loss at step 10600: 0.044863
+5252.0s 455 2025-03-24 14:35:32,483 INFO     Training average positive_sample_loss at step 10700: 0.037219
+5252.0s 456 2025-03-24 14:35:32,484 INFO     Training average negative_sample_loss at step 10700: 0.049191
+5252.0s 457 2025-03-24 14:35:32,485 INFO     Training average loss at step 10700: 0.043205
+5300.0s 458 2025-03-24 14:36:20,533 INFO     Training average positive_sample_loss at step 10800: 0.035563
+5300.0s 459 2025-03-24 14:36:20,534 INFO     Training average negative_sample_loss at step 10800: 0.048779
+5300.0s 460 2025-03-24 14:36:20,535 INFO     Training average loss at step 10800: 0.042171
+5348.1s 461 2025-03-24 14:37:08,642 INFO     Training average positive_sample_loss at step 10900: 0.040870
+5348.1s 462 2025-03-24 14:37:08,643 INFO     Training average negative_sample_loss at step 10900: 0.048575
+5348.1s 463 2025-03-24 14:37:08,644 INFO     Training average loss at step 10900: 0.044723
+5397.1s 464 2025-03-24 14:37:57,653 INFO     Training average positive_sample_loss at step 11000: 0.037600
+5397.1s 465 2025-03-24 14:37:57,655 INFO     Training average negative_sample_loss at step 11000: 0.047843
+5397.1s 466 2025-03-24 14:37:57,656 INFO     Training average loss at step 11000: 0.042721
+5445.1s 467 2025-03-24 14:38:45,642 INFO     Training average positive_sample_loss at step 11100: 0.040132
+5445.1s 468 2025-03-24 14:38:45,643 INFO     Training average negative_sample_loss at step 11100: 0.047506
+5445.1s 469 2025-03-24 14:38:45,643 INFO     Training average loss at step 11100: 0.043819
+5493.1s 470 2025-03-24 14:39:33,661 INFO     Training average positive_sample_loss at step 11200: 0.034107
+5493.1s 471 2025-03-24 14:39:33,662 INFO     Training average negative_sample_loss at step 11200: 0.046951
+5493.1s 472 2025-03-24 14:39:33,663 INFO     Training average loss at step 11200: 0.040529
+5542.1s 473 2025-03-24 14:40:22,652 INFO     Training average positive_sample_loss at step 11300: 0.034913
+5542.1s 474 2025-03-24 14:40:22,655 INFO     Training average negative_sample_loss at step 11300: 0.047498
+5542.1s 475 2025-03-24 14:40:22,656 INFO     Training average loss at step 11300: 0.041205
+5590.2s 476 2025-03-24 14:41:10,714 INFO     Training average positive_sample_loss at step 11400: 0.041955
+5590.2s 477 2025-03-24 14:41:10,715 INFO     Training average negative_sample_loss at step 11400: 0.047239
+5590.2s 478 2025-03-24 14:41:10,716 INFO     Training average loss at step 11400: 0.044597
+5639.1s 479 2025-03-24 14:41:59,667 INFO     Training average positive_sample_loss at step 11500: 0.032090
+5639.1s 480 2025-03-24 14:41:59,670 INFO     Training average negative_sample_loss at step 11500: 0.046271
+5639.1s 481 2025-03-24 14:41:59,671 INFO     Training average loss at step 11500: 0.039181
+5687.2s 482 2025-03-24 14:42:47,739 INFO     Training average positive_sample_loss at step 11600: 0.035892
+5687.2s 483 2025-03-24 14:42:47,740 INFO     Training average negative_sample_loss at step 11600: 0.045768
+5687.2s 484 2025-03-24 14:42:47,741 INFO     Training average loss at step 11600: 0.040830
+5735.3s 485 2025-03-24 14:43:35,821 INFO     Training average positive_sample_loss at step 11700: 0.033705
+5735.3s 486 2025-03-24 14:43:35,822 INFO     Training average negative_sample_loss at step 11700: 0.045494
+5735.3s 487 2025-03-24 14:43:35,823 INFO     Training average loss at step 11700: 0.039600
+5783.4s 488 2025-03-24 14:44:23,918 INFO     Training average positive_sample_loss at step 11800: 0.031970
+5783.4s 489 2025-03-24 14:44:23,919 INFO     Training average negative_sample_loss at step 11800: 0.046010
+5783.4s 490 2025-03-24 14:44:23,919 INFO     Training average loss at step 11800: 0.038990
+5832.2s 491 2025-03-24 14:45:12,731 INFO     Training average positive_sample_loss at step 11900: 0.035225
+5832.2s 492 2025-03-24 14:45:12,733 INFO     Training average negative_sample_loss at step 11900: 0.044803
+5832.2s 493 2025-03-24 14:45:12,734 INFO     Training average loss at step 11900: 0.040014
+5880.2s 494 2025-03-24 14:46:00,723 INFO     Training average positive_sample_loss at step 12000: 0.036383
+5880.2s 495 2025-03-24 14:46:00,724 INFO     Training average negative_sample_loss at step 12000: 0.044950
+5880.2s 496 2025-03-24 14:46:00,725 INFO     Training average loss at step 12000: 0.040666
+5929.1s 497 2025-03-24 14:46:49,657 INFO     Training average positive_sample_loss at step 12100: 0.032930
+5929.2s 498 2025-03-24 14:46:49,660 INFO     Training average negative_sample_loss at step 12100: 0.044296
+5929.2s 499 2025-03-24 14:46:49,661 INFO     Training average loss at step 12100: 0.038613
+5977.2s 500 2025-03-24 14:47:37,697 INFO     Training average positive_sample_loss at step 12200: 0.032380
+5977.2s 501 2025-03-24 14:47:37,698 INFO     Training average negative_sample_loss at step 12200: 0.044799
+5977.2s 502 2025-03-24 14:47:37,698 INFO     Training average loss at step 12200: 0.038589
+6030.8s 503 2025-03-24 14:48:31,342 INFO     Training average positive_sample_loss at step 12300: 0.028075
+6030.8s 504 2025-03-24 14:48:31,345 INFO     Training average negative_sample_loss at step 12300: 0.043813
+6030.8s 505 2025-03-24 14:48:31,346 INFO     Training average loss at step 12300: 0.035944
+6079.1s 506 2025-03-24 14:49:19,645 INFO     Training average positive_sample_loss at step 12400: 0.031915
+6079.1s 507 2025-03-24 14:49:19,646 INFO     Training average negative_sample_loss at step 12400: 0.042811
+6079.1s 508 2025-03-24 14:49:19,647 INFO     Training average loss at step 12400: 0.037363
+6127.1s 509 2025-03-24 14:50:07,580 INFO     Training average positive_sample_loss at step 12500: 0.030016
+6127.1s 510 2025-03-24 14:50:07,581 INFO     Training average negative_sample_loss at step 12500: 0.043022
+6127.1s 511 2025-03-24 14:50:07,582 INFO     Training average loss at step 12500: 0.036519
+6175.1s 512 2025-03-24 14:50:55,565 INFO     Training average positive_sample_loss at step 12600: 0.032247
+6175.1s 513 2025-03-24 14:50:55,566 INFO     Training average negative_sample_loss at step 12600: 0.043236
+6175.1s 514 2025-03-24 14:50:55,566 INFO     Training average loss at step 12600: 0.037742
+6223.0s 515 2025-03-24 14:51:43,528 INFO     Training average positive_sample_loss at step 12700: 0.030062
+6223.0s 516 2025-03-24 14:51:43,529 INFO     Training average negative_sample_loss at step 12700: 0.043251
+6223.0s 517 2025-03-24 14:51:43,529 INFO     Training average loss at step 12700: 0.036656
+6272.6s 518 2025-03-24 14:52:33,095 INFO     Training average positive_sample_loss at step 12800: 0.029523
+6272.6s 519 2025-03-24 14:52:33,097 INFO     Training average negative_sample_loss at step 12800: 0.041865
+6272.6s 520 2025-03-24 14:52:33,098 INFO     Training average loss at step 12800: 0.035694
+6320.6s 521 2025-03-24 14:53:21,097 INFO     Training average positive_sample_loss at step 12900: 0.029060
+6320.6s 522 2025-03-24 14:53:21,099 INFO     Training average negative_sample_loss at step 12900: 0.040997
+6320.6s 523 2025-03-24 14:53:21,099 INFO     Training average loss at step 12900: 0.035029
+6368.6s 524 2025-03-24 14:54:09,139 INFO     Training average positive_sample_loss at step 13000: 0.032472
+6368.6s 525 2025-03-24 14:54:09,140 INFO     Training average negative_sample_loss at step 13000: 0.042559
+6368.6s 526 2025-03-24 14:54:09,141 INFO     Training average loss at step 13000: 0.037515
+6416.7s 527 2025-03-24 14:54:57,169 INFO     Training average positive_sample_loss at step 13100: 0.030550
+6416.7s 528 2025-03-24 14:54:57,170 INFO     Training average negative_sample_loss at step 13100: 0.041814
+6416.7s 529 2025-03-24 14:54:57,171 INFO     Training average loss at step 13100: 0.036182
+6466.0s 530 2025-03-24 14:55:46,473 INFO     Training average positive_sample_loss at step 13200: 0.030802
+6466.0s 531 2025-03-24 14:55:46,476 INFO     Training average negative_sample_loss at step 13200: 0.041929
+6466.0s 532 2025-03-24 14:55:46,477 INFO     Training average loss at step 13200: 0.036366
+6514.3s 533 2025-03-24 14:56:34,759 INFO     Training average positive_sample_loss at step 13300: 0.030360
+6514.3s 534 2025-03-24 14:56:34,760 INFO     Training average negative_sample_loss at step 13300: 0.040959
+6514.3s 535 2025-03-24 14:56:34,761 INFO     Training average loss at step 13300: 0.035659
+6562.7s 536 2025-03-24 14:57:23,241 INFO     Training average positive_sample_loss at step 13400: 0.026476
+6562.7s 537 2025-03-24 14:57:23,242 INFO     Training average negative_sample_loss at step 13400: 0.040730
+6562.7s 538 2025-03-24 14:57:23,244 INFO     Training average loss at step 13400: 0.033603
+6614.7s 539 2025-03-24 14:58:15,229 INFO     Training average positive_sample_loss at step 13500: 0.028178
+6614.7s 540 2025-03-24 14:58:15,230 INFO     Training average negative_sample_loss at step 13500: 0.040849
+6614.7s 541 2025-03-24 14:58:15,230 INFO     Training average loss at step 13500: 0.034513
+6663.9s 542 2025-03-24 14:59:04,427 INFO     Training average positive_sample_loss at step 13600: 0.029623
+6663.9s 543 2025-03-24 14:59:04,430 INFO     Training average negative_sample_loss at step 13600: 0.040641
+6663.9s 544 2025-03-24 14:59:04,431 INFO     Training average loss at step 13600: 0.035132
+6713.0s 545 2025-03-24 14:59:53,546 INFO     Training average positive_sample_loss at step 13700: 0.025804
+6713.0s 546 2025-03-24 14:59:53,548 INFO     Training average negative_sample_loss at step 13700: 0.040238
+6713.0s 547 2025-03-24 14:59:53,549 INFO     Training average loss at step 13700: 0.033021
+6761.3s 548 2025-03-24 15:00:41,843 INFO     Training average positive_sample_loss at step 13800: 0.024609
+6761.3s 549 2025-03-24 15:00:41,844 INFO     Training average negative_sample_loss at step 13800: 0.039350
+6761.3s 550 2025-03-24 15:00:41,845 INFO     Training average loss at step 13800: 0.031980
+6809.6s 551 2025-03-24 15:01:30,128 INFO     Training average positive_sample_loss at step 13900: 0.029350
+6809.6s 552 2025-03-24 15:01:30,129 INFO     Training average negative_sample_loss at step 13900: 0.039919
+6809.6s 553 2025-03-24 15:01:30,130 INFO     Training average loss at step 13900: 0.034635
+6858.0s 554 2025-03-24 15:02:18,557 INFO     Training average positive_sample_loss at step 14000: 0.027891
+6858.0s 555 2025-03-24 15:02:18,558 INFO     Training average negative_sample_loss at step 14000: 0.039476
+6858.0s 556 2025-03-24 15:02:18,559 INFO     Training average loss at step 14000: 0.033684
+6907.2s 557 2025-03-24 15:03:07,735 INFO     Training average positive_sample_loss at step 14100: 0.025116
+6907.2s 558 2025-03-24 15:03:07,737 INFO     Training average negative_sample_loss at step 14100: 0.040091
+6907.2s 559 2025-03-24 15:03:07,738 INFO     Training average loss at step 14100: 0.032604
+6955.6s 560 2025-03-24 15:03:56,077 INFO     Training average positive_sample_loss at step 14200: 0.024072
+6955.6s 561 2025-03-24 15:03:56,078 INFO     Training average negative_sample_loss at step 14200: 0.038851
+6955.6s 562 2025-03-24 15:03:56,078 INFO     Training average loss at step 14200: 0.031462
+7004.6s 563 2025-03-24 15:04:45,112 INFO     Training average positive_sample_loss at step 14300: 0.027491
+7004.6s 564 2025-03-24 15:04:45,114 INFO     Training average negative_sample_loss at step 14300: 0.038915
+7004.6s 565 2025-03-24 15:04:45,115 INFO     Training average loss at step 14300: 0.033203
+7057.9s 566 2025-03-24 15:05:38,404 INFO     Training average positive_sample_loss at step 14400: 0.028815
+7057.9s 567 2025-03-24 15:05:38,405 INFO     Training average negative_sample_loss at step 14400: 0.038507
+7057.9s 568 2025-03-24 15:05:38,406 INFO     Training average loss at step 14400: 0.033661
+7106.9s 569 2025-03-24 15:06:27,403 INFO     Training average positive_sample_loss at step 14500: 0.024593
+7106.9s 570 2025-03-24 15:06:27,405 INFO     Training average negative_sample_loss at step 14500: 0.039115
+7106.9s 571 2025-03-24 15:06:27,406 INFO     Training average loss at step 14500: 0.031854
+7155.1s 572 2025-03-24 15:07:15,642 INFO     Training average positive_sample_loss at step 14600: 0.022628
+7155.1s 573 2025-03-24 15:07:15,643 INFO     Training average negative_sample_loss at step 14600: 0.038419
+7155.1s 574 2025-03-24 15:07:15,644 INFO     Training average loss at step 14600: 0.030524
+7203.2s 575 2025-03-24 15:08:03,752 INFO     Training average positive_sample_loss at step 14700: 0.025391
+7203.2s 576 2025-03-24 15:08:03,753 INFO     Training average negative_sample_loss at step 14700: 0.037574
+7203.2s 577 2025-03-24 15:08:03,754 INFO     Training average loss at step 14700: 0.031482
+7251.4s 578 2025-03-24 15:08:51,923 INFO     Training average positive_sample_loss at step 14800: 0.025007
+7251.4s 579 2025-03-24 15:08:51,924 INFO     Training average negative_sample_loss at step 14800: 0.037551
+7251.4s 580 2025-03-24 15:08:51,925 INFO     Training average loss at step 14800: 0.031279
+7299.5s 581 2025-03-24 15:09:40,016 INFO     Training average positive_sample_loss at step 14900: 0.024196
+7299.5s 582 2025-03-24 15:09:40,017 INFO     Training average negative_sample_loss at step 14900: 0.037589
+7299.5s 583 2025-03-24 15:09:40,018 INFO     Training average loss at step 14900: 0.030893
+7348.5s 584 2025-03-24 15:10:28,947 INFO     Training average positive_sample_loss at step 15000: 0.025856
+7348.5s 585 2025-03-24 15:10:28,950 INFO     Training average negative_sample_loss at step 15000: 0.037637
+7348.5s 586 2025-03-24 15:10:28,951 INFO     Training average loss at step 15000: 0.031747
+7373.3s 587 2025-03-24 15:10:53,854 INFO     Change learning_rate to 0.000020 at step 15050
+7397.4s 588 2025-03-24 15:11:17,893 INFO     Training average positive_sample_loss at step 15100: 0.023846
+7397.4s 589 2025-03-24 15:11:17,894 INFO     Training average negative_sample_loss at step 15100: 0.035278
+7397.4s 590 2025-03-24 15:11:17,895 INFO     Training average loss at step 15100: 0.029562
+7450.4s 591 2025-03-24 15:12:10,923 INFO     Training average positive_sample_loss at step 15200: 0.021798
+7450.4s 592 2025-03-24 15:12:10,924 INFO     Training average negative_sample_loss at step 15200: 0.031502
+7450.4s 593 2025-03-24 15:12:10,925 INFO     Training average loss at step 15200: 0.026650
+7498.5s 594 2025-03-24 15:12:58,982 INFO     Training average positive_sample_loss at step 15300: 0.024305
+7498.5s 595 2025-03-24 15:12:58,983 INFO     Training average negative_sample_loss at step 15300: 0.031269
+7498.5s 596 2025-03-24 15:12:58,984 INFO     Training average loss at step 15300: 0.027787
+7547.5s 597 2025-03-24 15:13:48,014 INFO     Training average positive_sample_loss at step 15400: 0.022576
+7547.5s 598 2025-03-24 15:13:48,016 INFO     Training average negative_sample_loss at step 15400: 0.030546
+7547.5s 599 2025-03-24 15:13:48,017 INFO     Training average loss at step 15400: 0.026561
+7599.8s 600 2025-03-24 15:14:40,261 INFO     Training average positive_sample_loss at step 15500: 0.020180
+7599.8s 601 2025-03-24 15:14:40,263 INFO     Training average negative_sample_loss at step 15500: 0.030290
+7599.8s 602 2025-03-24 15:14:40,263 INFO     Training average loss at step 15500: 0.025235
+7647.8s 603 2025-03-24 15:15:28,312 INFO     Training average positive_sample_loss at step 15600: 0.020003
+7647.8s 604 2025-03-24 15:15:28,314 INFO     Training average negative_sample_loss at step 15600: 0.030483
+7647.8s 605 2025-03-24 15:15:28,314 INFO     Training average loss at step 15600: 0.025243
+7696.0s 606 2025-03-24 15:16:16,522 INFO     Training average positive_sample_loss at step 15700: 0.019244
+7696.0s 607 2025-03-24 15:16:16,523 INFO     Training average negative_sample_loss at step 15700: 0.030537
+7696.0s 608 2025-03-24 15:16:16,524 INFO     Training average loss at step 15700: 0.024891
+7750.0s 609 2025-03-24 15:17:10,505 INFO     Training average positive_sample_loss at step 15800: 0.021666
+7750.0s 610 2025-03-24 15:17:10,508 INFO     Training average negative_sample_loss at step 15800: 0.029886
+7750.0s 611 2025-03-24 15:17:10,508 INFO     Training average loss at step 15800: 0.025776
+7799.2s 612 2025-03-24 15:17:59,723 INFO     Training average positive_sample_loss at step 15900: 0.021681
+7799.2s 613 2025-03-24 15:17:59,725 INFO     Training average negative_sample_loss at step 15900: 0.029901
+7799.2s 614 2025-03-24 15:17:59,726 INFO     Training average loss at step 15900: 0.025791
+7847.3s 615 2025-03-24 15:18:47,794 INFO     Training average positive_sample_loss at step 16000: 0.021049
+7847.3s 616 2025-03-24 15:18:47,795 INFO     Training average negative_sample_loss at step 16000: 0.030176
+7847.3s 617 2025-03-24 15:18:47,797 INFO     Training average loss at step 16000: 0.025613
+7900.2s 618 2025-03-24 15:19:40,667 INFO     Training average positive_sample_loss at step 16100: 0.017901
+7900.2s 619 2025-03-24 15:19:40,668 INFO     Training average negative_sample_loss at step 16100: 0.029778
+7900.2s 620 2025-03-24 15:19:40,669 INFO     Training average loss at step 16100: 0.023840
+7948.3s 621 2025-03-24 15:20:28,789 INFO     Training average positive_sample_loss at step 16200: 0.019114
+7948.3s 622 2025-03-24 15:20:28,790 INFO     Training average negative_sample_loss at step 16200: 0.029720
+7948.3s 623 2025-03-24 15:20:28,791 INFO     Training average loss at step 16200: 0.024417
+7997.2s 624 2025-03-24 15:21:17,759 INFO     Training average positive_sample_loss at step 16300: 0.018884
+7997.2s 625 2025-03-24 15:21:17,762 INFO     Training average negative_sample_loss at step 16300: 0.030182
+7997.2s 626 2025-03-24 15:21:17,763 INFO     Training average loss at step 16300: 0.024533
+8054.4s 627 2025-03-24 15:22:14,847 INFO     Training average positive_sample_loss at step 16400: 0.018247
+8054.4s 628 2025-03-24 15:22:14,848 INFO     Training average negative_sample_loss at step 16400: 0.029867
+8054.4s 629 2025-03-24 15:22:14,849 INFO     Training average loss at step 16400: 0.024057
+8102.6s 630 2025-03-24 15:23:03,076 INFO     Training average positive_sample_loss at step 16500: 0.018110
+8102.6s 631 2025-03-24 15:23:03,077 INFO     Training average negative_sample_loss at step 16500: 0.029474
+8102.6s 632 2025-03-24 15:23:03,078 INFO     Training average loss at step 16500: 0.023792
+8151.6s 633 2025-03-24 15:23:52,104 INFO     Training average positive_sample_loss at step 16600: 0.020503
+8151.6s 634 2025-03-24 15:23:52,107 INFO     Training average negative_sample_loss at step 16600: 0.030072
+8151.6s 635 2025-03-24 15:23:52,107 INFO     Training average loss at step 16600: 0.025288
+8200.6s 636 2025-03-24 15:24:41,149 INFO     Training average positive_sample_loss at step 16700: 0.018811
+8200.6s 637 2025-03-24 15:24:41,153 INFO     Training average negative_sample_loss at step 16700: 0.029785
+8200.6s 638 2025-03-24 15:24:41,154 INFO     Training average loss at step 16700: 0.024298
+8252.7s 639 2025-03-24 15:25:33,192 INFO     Training average positive_sample_loss at step 16800: 0.019885
+8252.7s 640 2025-03-24 15:25:33,193 INFO     Training average negative_sample_loss at step 16800: 0.029282
+8252.7s 641 2025-03-24 15:25:33,193 INFO     Training average loss at step 16800: 0.024583
+8305.6s 642 2025-03-24 15:26:26,051 INFO     Training average positive_sample_loss at step 16900: 0.019359
+8305.6s 643 2025-03-24 15:26:26,052 INFO     Training average negative_sample_loss at step 16900: 0.029552
+8305.6s 644 2025-03-24 15:26:26,053 INFO     Training average loss at step 16900: 0.024456
+8353.8s 645 2025-03-24 15:27:14,305 INFO     Training average positive_sample_loss at step 17000: 0.019939
+8353.8s 646 2025-03-24 15:27:14,307 INFO     Training average negative_sample_loss at step 17000: 0.029065
+8353.8s 647 2025-03-24 15:27:14,308 INFO     Training average loss at step 17000: 0.024502
+8401.8s 648 2025-03-24 15:28:02,355 INFO     Training average positive_sample_loss at step 17100: 0.016613
+8401.8s 649 2025-03-24 15:28:02,356 INFO     Training average negative_sample_loss at step 17100: 0.029015
+8401.8s 650 2025-03-24 15:28:02,356 INFO     Training average loss at step 17100: 0.022814
+8451.0s 651 2025-03-24 15:28:51,470 INFO     Training average positive_sample_loss at step 17200: 0.017456
+8451.0s 652 2025-03-24 15:28:51,472 INFO     Training average negative_sample_loss at step 17200: 0.029017
+8451.0s 653 2025-03-24 15:28:51,473 INFO     Training average loss at step 17200: 0.023236
+8504.9s 654 2025-03-24 15:29:45,423 INFO     Training average positive_sample_loss at step 17300: 0.018091
+8504.9s 655 2025-03-24 15:29:45,425 INFO     Training average negative_sample_loss at step 17300: 0.028885
+8504.9s 656 2025-03-24 15:29:45,426 INFO     Training average loss at step 17300: 0.023488
+8553.2s 657 2025-03-24 15:30:33,761 INFO     Training average positive_sample_loss at step 17400: 0.016869
+8553.2s 658 2025-03-24 15:30:33,762 INFO     Training average negative_sample_loss at step 17400: 0.028729
+8553.2s 659 2025-03-24 15:30:33,763 INFO     Training average loss at step 17400: 0.022799
+8605.4s 660 2025-03-24 15:31:25,906 INFO     Training average positive_sample_loss at step 17500: 0.018376
+8605.4s 661 2025-03-24 15:31:25,907 INFO     Training average negative_sample_loss at step 17500: 0.029193
+8605.4s 662 2025-03-24 15:31:25,908 INFO     Training average loss at step 17500: 0.023785
+8654.6s 663 2025-03-24 15:32:15,061 INFO     Training average positive_sample_loss at step 17600: 0.015714
+8654.6s 664 2025-03-24 15:32:15,064 INFO     Training average negative_sample_loss at step 17600: 0.028905
+8654.6s 665 2025-03-24 15:32:15,065 INFO     Training average loss at step 17600: 0.022310
+8707.7s 666 2025-03-24 15:33:08,175 INFO     Training average positive_sample_loss at step 17700: 0.016993
+8707.7s 667 2025-03-24 15:33:08,176 INFO     Training average negative_sample_loss at step 17700: 0.028883
+8707.7s 668 2025-03-24 15:33:08,177 INFO     Training average loss at step 17700: 0.022938
+8755.7s 669 2025-03-24 15:33:56,225 INFO     Training average positive_sample_loss at step 17800: 0.019376
+8755.7s 670 2025-03-24 15:33:56,226 INFO     Training average negative_sample_loss at step 17800: 0.028567
+8755.7s 671 2025-03-24 15:33:56,227 INFO     Training average loss at step 17800: 0.023971
+8803.8s 672 2025-03-24 15:34:44,358 INFO     Training average positive_sample_loss at step 17900: 0.016867
+8803.8s 673 2025-03-24 15:34:44,359 INFO     Training average negative_sample_loss at step 17900: 0.028737
+8803.8s 674 2025-03-24 15:34:44,360 INFO     Training average loss at step 17900: 0.022802
+8852.9s 675 2025-03-24 15:35:33,412 INFO     Training average positive_sample_loss at step 18000: 0.017986
+8852.9s 676 2025-03-24 15:35:33,415 INFO     Training average negative_sample_loss at step 18000: 0.028651
+8852.9s 677 2025-03-24 15:35:33,416 INFO     Training average loss at step 18000: 0.023319
+8915.1s 678 2025-03-24 15:36:35,625 INFO     Training average positive_sample_loss at step 18100: 0.015743
+8915.1s 679 2025-03-24 15:36:35,627 INFO     Training average negative_sample_loss at step 18100: 0.028362
+8915.1s 680 2025-03-24 15:36:35,628 INFO     Training average loss at step 18100: 0.022052
+8963.1s 681 2025-03-24 15:37:23,650 INFO     Training average positive_sample_loss at step 18200: 0.017530
+8963.1s 682 2025-03-24 15:37:23,652 INFO     Training average negative_sample_loss at step 18200: 0.028329
+8963.1s 683 2025-03-24 15:37:23,652 INFO     Training average loss at step 18200: 0.022929
+9011.4s 684 2025-03-24 15:38:11,908 INFO     Training average positive_sample_loss at step 18300: 0.017477
+9011.4s 685 2025-03-24 15:38:11,909 INFO     Training average negative_sample_loss at step 18300: 0.028342
+9011.4s 686 2025-03-24 15:38:11,909 INFO     Training average loss at step 18300: 0.022909
+9059.4s 687 2025-03-24 15:38:59,928 INFO     Training average positive_sample_loss at step 18400: 0.018347
+9059.4s 688 2025-03-24 15:38:59,929 INFO     Training average negative_sample_loss at step 18400: 0.028384
+9059.4s 689 2025-03-24 15:38:59,930 INFO     Training average loss at step 18400: 0.023366
+9108.7s 690 2025-03-24 15:39:49,164 INFO     Training average positive_sample_loss at step 18500: 0.017819
+9108.7s 691 2025-03-24 15:39:49,166 INFO     Training average negative_sample_loss at step 18500: 0.028036
+9108.7s 692 2025-03-24 15:39:49,167 INFO     Training average loss at step 18500: 0.022928
+9157.0s 693 2025-03-24 15:40:37,520 INFO     Training average positive_sample_loss at step 18600: 0.016280
+9157.0s 694 2025-03-24 15:40:37,521 INFO     Training average negative_sample_loss at step 18600: 0.027913
+9157.0s 695 2025-03-24 15:40:37,522 INFO     Training average loss at step 18600: 0.022097
+9205.1s 696 2025-03-24 15:41:25,635 INFO     Training average positive_sample_loss at step 18700: 0.023750
+9205.1s 697 2025-03-24 15:41:25,636 INFO     Training average negative_sample_loss at step 18700: 0.027757
+9205.1s 698 2025-03-24 15:41:25,636 INFO     Training average loss at step 18700: 0.025754
+9254.3s 699 2025-03-24 15:42:14,788 INFO     Training average positive_sample_loss at step 18800: 0.016778
+9254.3s 700 2025-03-24 15:42:14,791 INFO     Training average negative_sample_loss at step 18800: 0.027737
+9254.3s 701 2025-03-24 15:42:14,792 INFO     Training average loss at step 18800: 0.022257
+9303.4s 702 2025-03-24 15:43:03,851 INFO     Training average positive_sample_loss at step 18900: 0.017940
+9303.4s 703 2025-03-24 15:43:03,854 INFO     Training average negative_sample_loss at step 18900: 0.028137
+9303.4s 704 2025-03-24 15:43:03,856 INFO     Training average loss at step 18900: 0.023039
+9351.5s 705 2025-03-24 15:43:52,023 INFO     Training average positive_sample_loss at step 19000: 0.016872
+9351.5s 706 2025-03-24 15:43:52,024 INFO     Training average negative_sample_loss at step 19000: 0.027199
+9351.5s 707 2025-03-24 15:43:52,025 INFO     Training average loss at step 19000: 0.022036
+9399.7s 708 2025-03-24 15:44:40,163 INFO     Training average positive_sample_loss at step 19100: 0.017017
+9399.7s 709 2025-03-24 15:44:40,165 INFO     Training average negative_sample_loss at step 19100: 0.027494
+9399.7s 710 2025-03-24 15:44:40,165 INFO     Training average loss at step 19100: 0.022255
+9447.7s 711 2025-03-24 15:45:28,246 INFO     Training average positive_sample_loss at step 19200: 0.015875
+9447.7s 712 2025-03-24 15:45:28,247 INFO     Training average negative_sample_loss at step 19200: 0.027998
+9447.7s 713 2025-03-24 15:45:28,248 INFO     Training average loss at step 19200: 0.021937
+9495.9s 714 2025-03-24 15:46:16,432 INFO     Training average positive_sample_loss at step 19300: 0.016770
+9495.9s 715 2025-03-24 15:46:16,433 INFO     Training average negative_sample_loss at step 19300: 0.027696
+9495.9s 716 2025-03-24 15:46:16,434 INFO     Training average loss at step 19300: 0.022233
+9544.9s 717 2025-03-24 15:47:05,387 INFO     Training average positive_sample_loss at step 19400: 0.018154
+9544.9s 718 2025-03-24 15:47:05,389 INFO     Training average negative_sample_loss at step 19400: 0.028106
+9544.9s 719 2025-03-24 15:47:05,390 INFO     Training average loss at step 19400: 0.023130
+9593.1s 720 2025-03-24 15:47:53,575 INFO     Training average positive_sample_loss at step 19500: 0.015676
+9593.1s 721 2025-03-24 15:47:53,576 INFO     Training average negative_sample_loss at step 19500: 0.027174
+9593.1s 722 2025-03-24 15:47:53,577 INFO     Training average loss at step 19500: 0.021425
+9642.1s 723 2025-03-24 15:48:42,619 INFO     Training average positive_sample_loss at step 19600: 0.019120
+9642.1s 724 2025-03-24 15:48:42,622 INFO     Training average negative_sample_loss at step 19600: 0.027317
+9642.1s 725 2025-03-24 15:48:42,623 INFO     Training average loss at step 19600: 0.023218
+9690.3s 726 2025-03-24 15:49:30,746 INFO     Training average positive_sample_loss at step 19700: 0.017509
+9690.3s 727 2025-03-24 15:49:30,747 INFO     Training average negative_sample_loss at step 19700: 0.027771
+9690.3s 728 2025-03-24 15:49:30,748 INFO     Training average loss at step 19700: 0.022640
+9739.2s 729 2025-03-24 15:50:19,666 INFO     Training average positive_sample_loss at step 19800: 0.015626
+9739.2s 730 2025-03-24 15:50:19,668 INFO     Training average negative_sample_loss at step 19800: 0.026994
+9739.2s 731 2025-03-24 15:50:19,669 INFO     Training average loss at step 19800: 0.021310
+9787.3s 732 2025-03-24 15:51:07,838 INFO     Training average positive_sample_loss at step 19900: 0.017030
+9787.3s 733 2025-03-24 15:51:07,839 INFO     Training average negative_sample_loss at step 19900: 0.026878
+9787.3s 734 2025-03-24 15:51:07,839 INFO     Training average loss at step 19900: 0.021954
+9835.3s 735 2025-03-24 15:51:55,769 INFO     Training average positive_sample_loss at step 20000: 0.019996
+9835.3s 736 2025-03-24 15:51:55,770 INFO     Training average negative_sample_loss at step 20000: 0.027350
+9835.3s 737 2025-03-24 15:51:55,770 INFO     Training average loss at step 20000: 0.023673
+9883.7s 738 2025-03-24 15:52:44,208 INFO     Training average positive_sample_loss at step 20100: 0.016577
+9883.7s 739 2025-03-24 15:52:44,209 INFO     Training average negative_sample_loss at step 20100: 0.027353
+9883.7s 740 2025-03-24 15:52:44,209 INFO     Training average loss at step 20100: 0.021965
+9932.9s 741 2025-03-24 15:53:33,364 INFO     Training average positive_sample_loss at step 20200: 0.016642
+9932.9s 742 2025-03-24 15:53:33,367 INFO     Training average negative_sample_loss at step 20200: 0.027297
+9932.9s 743 2025-03-24 15:53:33,368 INFO     Training average loss at step 20200: 0.021970
+9982.2s 744 2025-03-24 15:54:22,661 INFO     Training average positive_sample_loss at step 20300: 0.018212
+9982.2s 745 2025-03-24 15:54:22,664 INFO     Training average negative_sample_loss at step 20300: 0.027066
+9982.2s 746 2025-03-24 15:54:22,665 INFO     Training average loss at step 20300: 0.022639
+10030.5s 747 2025-03-24 15:55:11,017 INFO     Training average positive_sample_loss at step 20400: 0.017386
+10030.5s 748 2025-03-24 15:55:11,018 INFO     Training average negative_sample_loss at step 20400: 0.026979
+10030.5s 749 2025-03-24 15:55:11,019 INFO     Training average loss at step 20400: 0.022182
+10078.8s 750 2025-03-24 15:55:59,264 INFO     Training average positive_sample_loss at step 20500: 0.017050
+10078.8s 751 2025-03-24 15:55:59,265 INFO     Training average negative_sample_loss at step 20500: 0.026851
+10078.8s 752 2025-03-24 15:55:59,265 INFO     Training average loss at step 20500: 0.021950
+10127.1s 753 2025-03-24 15:56:47,614 INFO     Training average positive_sample_loss at step 20600: 0.015816
+10127.1s 754 2025-03-24 15:56:47,615 INFO     Training average negative_sample_loss at step 20600: 0.026921
+10127.1s 755 2025-03-24 15:56:47,616 INFO     Training average loss at step 20600: 0.021368
+10176.4s 756 2025-03-24 15:57:36,929 INFO     Training average positive_sample_loss at step 20700: 0.016530
+10176.4s 757 2025-03-24 15:57:36,932 INFO     Training average negative_sample_loss at step 20700: 0.026371
+10176.4s 758 2025-03-24 15:57:36,933 INFO     Training average loss at step 20700: 0.021450
+10224.8s 759 2025-03-24 15:58:25,242 INFO     Training average positive_sample_loss at step 20800: 0.017134
+10224.8s 760 2025-03-24 15:58:25,243 INFO     Training average negative_sample_loss at step 20800: 0.026907
+10224.8s 761 2025-03-24 15:58:25,244 INFO     Training average loss at step 20800: 0.022021
+10272.9s 762 2025-03-24 15:59:13,427 INFO     Training average positive_sample_loss at step 20900: 0.015145
+10272.9s 763 2025-03-24 15:59:13,428 INFO     Training average negative_sample_loss at step 20900: 0.026697
+10273.0s 764 2025-03-24 15:59:13,429 INFO     Training average loss at step 20900: 0.020921
+10321.0s 765 2025-03-24 16:00:01,530 INFO     Training average positive_sample_loss at step 21000: 0.016492
+10321.0s 766 2025-03-24 16:00:01,531 INFO     Training average negative_sample_loss at step 21000: 0.026741
+10321.0s 767 2025-03-24 16:00:01,532 INFO     Training average loss at step 21000: 0.021616
+10370.7s 768 2025-03-24 16:00:51,244 INFO     Training average positive_sample_loss at step 21100: 0.017814
+10370.7s 769 2025-03-24 16:00:51,246 INFO     Training average negative_sample_loss at step 21100: 0.026961
+10370.7s 770 2025-03-24 16:00:51,247 INFO     Training average loss at step 21100: 0.022387
+10418.9s 771 2025-03-24 16:01:39,357 INFO     Training average positive_sample_loss at step 21200: 0.015800
+10418.9s 772 2025-03-24 16:01:39,358 INFO     Training average negative_sample_loss at step 21200: 0.026426
+10418.9s 773 2025-03-24 16:01:39,359 INFO     Training average loss at step 21200: 0.021113
+10467.0s 774 2025-03-24 16:02:27,487 INFO     Training average positive_sample_loss at step 21300: 0.016147
+10467.0s 775 2025-03-24 16:02:27,487 INFO     Training average negative_sample_loss at step 21300: 0.026365
+10467.0s 776 2025-03-24 16:02:27,488 INFO     Training average loss at step 21300: 0.021256
+10515.2s 777 2025-03-24 16:03:15,668 INFO     Training average positive_sample_loss at step 21400: 0.017287
+10515.2s 778 2025-03-24 16:03:15,669 INFO     Training average negative_sample_loss at step 21400: 0.026315
+10515.2s 779 2025-03-24 16:03:15,670 INFO     Training average loss at step 21400: 0.021801
+10563.7s 780 2025-03-24 16:04:04,168 INFO     Training average positive_sample_loss at step 21500: 0.016005
+10563.7s 781 2025-03-24 16:04:04,169 INFO     Training average negative_sample_loss at step 21500: 0.026600
+10563.7s 782 2025-03-24 16:04:04,169 INFO     Training average loss at step 21500: 0.021303
+10613.1s 783 2025-03-24 16:04:53,592 INFO     Training average positive_sample_loss at step 21600: 0.017522
+10613.1s 784 2025-03-24 16:04:53,595 INFO     Training average negative_sample_loss at step 21600: 0.026374
+10613.1s 785 2025-03-24 16:04:53,596 INFO     Training average loss at step 21600: 0.021948
+10661.6s 786 2025-03-24 16:05:42,117 INFO     Training average positive_sample_loss at step 21700: 0.016115
+10661.6s 787 2025-03-24 16:05:42,118 INFO     Training average negative_sample_loss at step 21700: 0.026441
+10661.6s 788 2025-03-24 16:05:42,119 INFO     Training average loss at step 21700: 0.021278
+10711.3s 789 2025-03-24 16:06:31,792 INFO     Training average positive_sample_loss at step 21800: 0.014526
+10711.3s 790 2025-03-24 16:06:31,795 INFO     Training average negative_sample_loss at step 21800: 0.026324
+10711.3s 791 2025-03-24 16:06:31,797 INFO     Training average loss at step 21800: 0.020425
+10759.9s 792 2025-03-24 16:07:20,357 INFO     Training average positive_sample_loss at step 21900: 0.015876
+10759.9s 793 2025-03-24 16:07:20,359 INFO     Training average negative_sample_loss at step 21900: 0.026275
+10759.9s 794 2025-03-24 16:07:20,359 INFO     Training average loss at step 21900: 0.021076
+10809.3s 795 2025-03-24 16:08:09,739 INFO     Training average positive_sample_loss at step 22000: 0.016531
+10809.3s 796 2025-03-24 16:08:09,742 INFO     Training average negative_sample_loss at step 22000: 0.026077
+10809.3s 797 2025-03-24 16:08:09,742 INFO     Training average loss at step 22000: 0.021304
+10857.5s 798 2025-03-24 16:08:58,005 INFO     Training average positive_sample_loss at step 22100: 0.014719
+10857.5s 799 2025-03-24 16:08:58,006 INFO     Training average negative_sample_loss at step 22100: 0.026151
+10857.5s 800 2025-03-24 16:08:58,007 INFO     Training average loss at step 22100: 0.020435
+10905.7s 801 2025-03-24 16:09:46,191 INFO     Training average positive_sample_loss at step 22200: 0.016580
+10905.7s 802 2025-03-24 16:09:46,192 INFO     Training average negative_sample_loss at step 22200: 0.025983
+10905.7s 803 2025-03-24 16:09:46,193 INFO     Training average loss at step 22200: 0.021282
+10953.9s 804 2025-03-24 16:10:34,354 INFO     Training average positive_sample_loss at step 22300: 0.015950
+10953.9s 805 2025-03-24 16:10:34,355 INFO     Training average negative_sample_loss at step 22300: 0.026298
+10953.9s 806 2025-03-24 16:10:34,356 INFO     Training average loss at step 22300: 0.021124
+11002.9s 807 2025-03-24 16:11:23,359 INFO     Training average positive_sample_loss at step 22400: 0.015351
+11002.9s 808 2025-03-24 16:11:23,361 INFO     Training average negative_sample_loss at step 22400: 0.026107
+11002.9s 809 2025-03-24 16:11:23,362 INFO     Training average loss at step 22400: 0.020729
+11051.1s 810 2025-03-24 16:12:11,613 INFO     Training average positive_sample_loss at step 22500: 0.015991
+11051.1s 811 2025-03-24 16:12:11,615 INFO     Training average negative_sample_loss at step 22500: 0.025970
+11051.1s 812 2025-03-24 16:12:11,615 INFO     Training average loss at step 22500: 0.020981
+11088.2s 813 2025-03-24 16:12:48,667 INFO     Change learning_rate to 0.000004 at step 22575
+11100.1s 814 2025-03-24 16:13:00,694 INFO     Training average positive_sample_loss at step 22600: 0.014489
+11100.1s 815 2025-03-24 16:13:00,696 INFO     Training average negative_sample_loss at step 22600: 0.025573
+11100.1s 816 2025-03-24 16:13:00,696 INFO     Training average loss at step 22600: 0.020031
+11148.3s 817 2025-03-24 16:13:48,822 INFO     Training average positive_sample_loss at step 22700: 0.017876
+11148.3s 818 2025-03-24 16:13:48,823 INFO     Training average negative_sample_loss at step 22700: 0.024773
+11148.3s 819 2025-03-24 16:13:48,824 INFO     Training average loss at step 22700: 0.021325
+11196.6s 820 2025-03-24 16:14:37,070 INFO     Training average positive_sample_loss at step 22800: 0.016137
+11196.6s 821 2025-03-24 16:14:37,071 INFO     Training average negative_sample_loss at step 22800: 0.025107
+11196.6s 822 2025-03-24 16:14:37,072 INFO     Training average loss at step 22800: 0.020622
+11245.9s 823 2025-03-24 16:15:26,353 INFO     Training average positive_sample_loss at step 22900: 0.016298
+11245.9s 824 2025-03-24 16:15:26,356 INFO     Training average negative_sample_loss at step 22900: 0.024645
+11245.9s 825 2025-03-24 16:15:26,357 INFO     Training average loss at step 22900: 0.020471
+11294.0s 826 2025-03-24 16:16:14,490 INFO     Training average positive_sample_loss at step 23000: 0.013828
+11294.0s 827 2025-03-24 16:16:14,492 INFO     Training average negative_sample_loss at step 23000: 0.024442
+11294.0s 828 2025-03-24 16:16:14,492 INFO     Training average loss at step 23000: 0.019135
+11342.2s 829 2025-03-24 16:17:02,709 INFO     Training average positive_sample_loss at step 23100: 0.014543
+11342.2s 830 2025-03-24 16:17:02,710 INFO     Training average negative_sample_loss at step 23100: 0.024420
+11342.2s 831 2025-03-24 16:17:02,710 INFO     Training average loss at step 23100: 0.019482
+11390.3s 832 2025-03-24 16:17:50,800 INFO     Training average positive_sample_loss at step 23200: 0.014470
+11390.3s 833 2025-03-24 16:17:50,801 INFO     Training average negative_sample_loss at step 23200: 0.024684
+11390.3s 834 2025-03-24 16:17:50,803 INFO     Training average loss at step 23200: 0.019577
+11440.2s 835 2025-03-24 16:18:40,722 INFO     Training average positive_sample_loss at step 23300: 0.016835
+11440.2s 836 2025-03-24 16:18:40,725 INFO     Training average negative_sample_loss at step 23300: 0.024600
+11440.2s 837 2025-03-24 16:18:40,725 INFO     Training average loss at step 23300: 0.020717
+11488.5s 838 2025-03-24 16:19:28,976 INFO     Training average positive_sample_loss at step 23400: 0.014901
+11488.5s 839 2025-03-24 16:19:28,977 INFO     Training average negative_sample_loss at step 23400: 0.024379
+11488.5s 840 2025-03-24 16:19:28,978 INFO     Training average loss at step 23400: 0.019640
+11536.5s 841 2025-03-24 16:20:17,024 INFO     Training average positive_sample_loss at step 23500: 0.015323
+11536.5s 842 2025-03-24 16:20:17,026 INFO     Training average negative_sample_loss at step 23500: 0.024202
+11536.6s 843 2025-03-24 16:20:17,026 INFO     Training average loss at step 23500: 0.019762
+11584.7s 844 2025-03-24 16:21:05,161 INFO     Training average positive_sample_loss at step 23600: 0.015079
+11584.7s 845 2025-03-24 16:21:05,162 INFO     Training average negative_sample_loss at step 23600: 0.024342
+11584.7s 846 2025-03-24 16:21:05,163 INFO     Training average loss at step 23600: 0.019711
+11632.9s 847 2025-03-24 16:21:53,379 INFO     Training average positive_sample_loss at step 23700: 0.016670
+11632.9s 848 2025-03-24 16:21:53,380 INFO     Training average negative_sample_loss at step 23700: 0.024500
+11632.9s 849 2025-03-24 16:21:53,380 INFO     Training average loss at step 23700: 0.020585
+11682.1s 850 2025-03-24 16:22:42,568 INFO     Training average positive_sample_loss at step 23800: 0.016734
+11682.1s 851 2025-03-24 16:22:42,570 INFO     Training average negative_sample_loss at step 23800: 0.024352
+11682.1s 852 2025-03-24 16:22:42,571 INFO     Training average loss at step 23800: 0.020543
+11730.2s 853 2025-03-24 16:23:30,714 INFO     Training average positive_sample_loss at step 23900: 0.016853
+11730.2s 854 2025-03-24 16:23:30,714 INFO     Training average negative_sample_loss at step 23900: 0.024391
+11730.2s 855 2025-03-24 16:23:30,715 INFO     Training average loss at step 23900: 0.020622
+11778.3s 856 2025-03-24 16:24:18,802 INFO     Training average positive_sample_loss at step 24000: 0.016386
+11778.3s 857 2025-03-24 16:24:18,803 INFO     Training average negative_sample_loss at step 24000: 0.024370
+11778.3s 858 2025-03-24 16:24:18,803 INFO     Training average loss at step 24000: 0.020378
+11827.3s 859 2025-03-24 16:25:07,763 INFO     Training average positive_sample_loss at step 24100: 0.014243
+11827.3s 860 2025-03-24 16:25:07,765 INFO     Training average negative_sample_loss at step 24100: 0.024124
+11827.3s 861 2025-03-24 16:25:07,766 INFO     Training average loss at step 24100: 0.019183
+11876.1s 862 2025-03-24 16:25:56,611 INFO     Training average positive_sample_loss at step 24200: 0.016406
+11876.1s 863 2025-03-24 16:25:56,614 INFO     Training average negative_sample_loss at step 24200: 0.024259
+11876.1s 864 2025-03-24 16:25:56,614 INFO     Training average loss at step 24200: 0.020332
+11924.3s 865 2025-03-24 16:26:44,813 INFO     Training average positive_sample_loss at step 24300: 0.017338
+11924.3s 866 2025-03-24 16:26:44,814 INFO     Training average negative_sample_loss at step 24300: 0.024044
+11924.3s 867 2025-03-24 16:26:44,815 INFO     Training average loss at step 24300: 0.020691
+11972.4s 868 2025-03-24 16:27:32,894 INFO     Training average positive_sample_loss at step 24400: 0.014932
+11972.4s 869 2025-03-24 16:27:32,895 INFO     Training average negative_sample_loss at step 24400: 0.024457
+11972.4s 870 2025-03-24 16:27:32,896 INFO     Training average loss at step 24400: 0.019695
+12020.6s 871 2025-03-24 16:28:21,046 INFO     Training average positive_sample_loss at step 24500: 0.014090
+12020.6s 872 2025-03-24 16:28:21,048 INFO     Training average negative_sample_loss at step 24500: 0.024278
+12020.6s 873 2025-03-24 16:28:21,048 INFO     Training average loss at step 24500: 0.019184
+12069.6s 874 2025-03-24 16:29:10,091 INFO     Training average positive_sample_loss at step 24600: 0.016403
+12069.6s 875 2025-03-24 16:29:10,094 INFO     Training average negative_sample_loss at step 24600: 0.024233
+12069.6s 876 2025-03-24 16:29:10,094 INFO     Training average loss at step 24600: 0.020318
+12117.8s 877 2025-03-24 16:29:58,306 INFO     Training average positive_sample_loss at step 24700: 0.014787
+12117.8s 878 2025-03-24 16:29:58,307 INFO     Training average negative_sample_loss at step 24700: 0.024099
+12117.8s 879 2025-03-24 16:29:58,308 INFO     Training average loss at step 24700: 0.019443
+12166.9s 880 2025-03-24 16:30:47,438 INFO     Training average positive_sample_loss at step 24800: 0.018377
+12166.9s 881 2025-03-24 16:30:47,441 INFO     Training average negative_sample_loss at step 24800: 0.024290
+12166.9s 882 2025-03-24 16:30:47,442 INFO     Training average loss at step 24800: 0.021334
+12215.1s 883 2025-03-24 16:31:35,566 INFO     Training average positive_sample_loss at step 24900: 0.016365
+12215.1s 884 2025-03-24 16:31:35,567 INFO     Training average negative_sample_loss at step 24900: 0.024430
+12215.1s 885 2025-03-24 16:31:35,568 INFO     Training average loss at step 24900: 0.020397
+12263.4s 886 2025-03-24 16:32:23,833 INFO     Training average positive_sample_loss at step 25000: 0.015200
+12263.4s 887 2025-03-24 16:32:23,834 INFO     Training average negative_sample_loss at step 25000: 0.024490
+12263.4s 888 2025-03-24 16:32:23,835 INFO     Training average loss at step 25000: 0.019845
+12312.3s 889 2025-03-24 16:33:12,795 INFO     Training average positive_sample_loss at step 25100: 0.015490
+12312.3s 890 2025-03-24 16:33:12,797 INFO     Training average negative_sample_loss at step 25100: 0.024078
+12312.3s 891 2025-03-24 16:33:12,798 INFO     Training average loss at step 25100: 0.019784
+12360.6s 892 2025-03-24 16:34:01,093 INFO     Training average positive_sample_loss at step 25200: 0.013674
+12360.6s 893 2025-03-24 16:34:01,095 INFO     Training average negative_sample_loss at step 25200: 0.024555
+12360.6s 894 2025-03-24 16:34:01,095 INFO     Training average loss at step 25200: 0.019115
+12408.7s 895 2025-03-24 16:34:49,207 INFO     Training average positive_sample_loss at step 25300: 0.014886
+12408.7s 896 2025-03-24 16:34:49,208 INFO     Training average negative_sample_loss at step 25300: 0.024500
+12408.7s 897 2025-03-24 16:34:49,209 INFO     Training average loss at step 25300: 0.019693
+12456.9s 898 2025-03-24 16:35:37,409 INFO     Training average positive_sample_loss at step 25400: 0.013810
+12456.9s 899 2025-03-24 16:35:37,410 INFO     Training average negative_sample_loss at step 25400: 0.024039
+12456.9s 900 2025-03-24 16:35:37,411 INFO     Training average loss at step 25400: 0.018924
+12505.8s 901 2025-03-24 16:36:26,334 INFO     Training average positive_sample_loss at step 25500: 0.014512
+12505.8s 902 2025-03-24 16:36:26,337 INFO     Training average negative_sample_loss at step 25500: 0.024204
+12505.8s 903 2025-03-24 16:36:26,338 INFO     Training average loss at step 25500: 0.019358
+12555.0s 904 2025-03-24 16:37:15,513 INFO     Training average positive_sample_loss at step 25600: 0.012974
+12555.0s 905 2025-03-24 16:37:15,516 INFO     Training average negative_sample_loss at step 25600: 0.024095
+12555.0s 906 2025-03-24 16:37:15,516 INFO     Training average loss at step 25600: 0.018534
+12603.2s 907 2025-03-24 16:38:03,715 INFO     Training average positive_sample_loss at step 25700: 0.015268
+12603.2s 908 2025-03-24 16:38:03,716 INFO     Training average negative_sample_loss at step 25700: 0.024272
+12603.2s 909 2025-03-24 16:38:03,716 INFO     Training average loss at step 25700: 0.019770
+12651.5s 910 2025-03-24 16:38:51,977 INFO     Training average positive_sample_loss at step 25800: 0.016569
+12651.5s 911 2025-03-24 16:38:51,978 INFO     Training average negative_sample_loss at step 25800: 0.024079
+12651.5s 912 2025-03-24 16:38:51,979 INFO     Training average loss at step 25800: 0.020324
+12699.7s 913 2025-03-24 16:39:40,096 INFO     Training average positive_sample_loss at step 25900: 0.014222
+12699.7s 914 2025-03-24 16:39:40,097 INFO     Training average negative_sample_loss at step 25900: 0.024381
+12699.7s 915 2025-03-24 16:39:40,098 INFO     Training average loss at step 25900: 0.019302
+12748.9s 916 2025-03-24 16:40:29,438 INFO     Training average positive_sample_loss at step 26000: 0.014723
+12748.9s 917 2025-03-24 16:40:29,441 INFO     Training average negative_sample_loss at step 26000: 0.023803
+12748.9s 918 2025-03-24 16:40:29,442 INFO     Training average loss at step 26000: 0.019263
+12797.7s 919 2025-03-24 16:41:18,133 INFO     Training average positive_sample_loss at step 26100: 0.014929
+12797.7s 920 2025-03-24 16:41:18,134 INFO     Training average negative_sample_loss at step 26100: 0.023950
+12797.7s 921 2025-03-24 16:41:18,135 INFO     Training average loss at step 26100: 0.019439
+12846.3s 922 2025-03-24 16:42:06,792 INFO     Training average positive_sample_loss at step 26200: 0.015200
+12846.3s 923 2025-03-24 16:42:06,793 INFO     Training average negative_sample_loss at step 26200: 0.024309
+12846.3s 924 2025-03-24 16:42:06,793 INFO     Training average loss at step 26200: 0.019754
+12896.0s 925 2025-03-24 16:42:56,418 INFO     Training average positive_sample_loss at step 26300: 0.013983
+12896.0s 926 2025-03-24 16:42:56,421 INFO     Training average negative_sample_loss at step 26300: 0.024440
+12896.0s 927 2025-03-24 16:42:56,422 INFO     Training average loss at step 26300: 0.019212
+12945.3s 928 2025-03-24 16:43:45,819 INFO     Training average positive_sample_loss at step 26400: 0.014363
+12945.3s 929 2025-03-24 16:43:45,822 INFO     Training average negative_sample_loss at step 26400: 0.023653
+12945.3s 930 2025-03-24 16:43:45,823 INFO     Training average loss at step 26400: 0.019008
+12994.1s 931 2025-03-24 16:44:34,563 INFO     Training average positive_sample_loss at step 26500: 0.014603
+12994.1s 932 2025-03-24 16:44:34,565 INFO     Training average negative_sample_loss at step 26500: 0.024335
+12994.1s 933 2025-03-24 16:44:34,566 INFO     Training average loss at step 26500: 0.019469
+13042.8s 934 2025-03-24 16:45:23,278 INFO     Training average positive_sample_loss at step 26600: 0.014414
+13042.8s 935 2025-03-24 16:45:23,279 INFO     Training average negative_sample_loss at step 26600: 0.024034
+13042.8s 936 2025-03-24 16:45:23,280 INFO     Training average loss at step 26600: 0.019224
+13091.4s 937 2025-03-24 16:46:11,874 INFO     Training average positive_sample_loss at step 26700: 0.014271
+13091.4s 938 2025-03-24 16:46:11,875 INFO     Training average negative_sample_loss at step 26700: 0.024083
+13091.4s 939 2025-03-24 16:46:11,876 INFO     Training average loss at step 26700: 0.019177
+13140.7s 940 2025-03-24 16:47:01,181 INFO     Training average positive_sample_loss at step 26800: 0.015812
+13140.7s 941 2025-03-24 16:47:01,184 INFO     Training average negative_sample_loss at step 26800: 0.024067
+13140.7s 942 2025-03-24 16:47:01,184 INFO     Training average loss at step 26800: 0.019939
+13189.2s 943 2025-03-24 16:47:49,713 INFO     Training average positive_sample_loss at step 26900: 0.013799
+13189.2s 944 2025-03-24 16:47:49,714 INFO     Training average negative_sample_loss at step 26900: 0.023593
+13189.2s 945 2025-03-24 16:47:49,715 INFO     Training average loss at step 26900: 0.018696
+13238.0s 946 2025-03-24 16:48:38,426 INFO     Training average positive_sample_loss at step 27000: 0.014978
+13238.0s 947 2025-03-24 16:48:38,427 INFO     Training average negative_sample_loss at step 27000: 0.023922
+13238.0s 948 2025-03-24 16:48:38,428 INFO     Training average loss at step 27000: 0.019450
+13287.3s 949 2025-03-24 16:49:27,764 INFO     Training average positive_sample_loss at step 27100: 0.014790
+13287.3s 950 2025-03-24 16:49:27,766 INFO     Training average negative_sample_loss at step 27100: 0.024354
+13287.3s 951 2025-03-24 16:49:27,767 INFO     Training average loss at step 27100: 0.019572
+13335.7s 952 2025-03-24 16:50:16,234 INFO     Training average positive_sample_loss at step 27200: 0.014934
+13335.7s 953 2025-03-24 16:50:16,236 INFO     Training average negative_sample_loss at step 27200: 0.023822
+13335.7s 954 2025-03-24 16:50:16,236 INFO     Training average loss at step 27200: 0.019378
+13384.9s 955 2025-03-24 16:51:05,378 INFO     Training average positive_sample_loss at step 27300: 0.014674
+13384.9s 956 2025-03-24 16:51:05,381 INFO     Training average negative_sample_loss at step 27300: 0.024135
+13384.9s 957 2025-03-24 16:51:05,382 INFO     Training average loss at step 27300: 0.019405
+13433.2s 958 2025-03-24 16:51:53,666 INFO     Training average positive_sample_loss at step 27400: 0.015127
+13433.2s 959 2025-03-24 16:51:53,668 INFO     Training average negative_sample_loss at step 27400: 0.023771
+13433.2s 960 2025-03-24 16:51:53,668 INFO     Training average loss at step 27400: 0.019449
+13481.5s 961 2025-03-24 16:52:41,928 INFO     Training average positive_sample_loss at step 27500: 0.016011
+13481.5s 962 2025-03-24 16:52:41,929 INFO     Training average negative_sample_loss at step 27500: 0.023991
+13481.5s 963 2025-03-24 16:52:41,930 INFO     Training average loss at step 27500: 0.020001
+13529.7s 964 2025-03-24 16:53:30,242 INFO     Training average positive_sample_loss at step 27600: 0.015520
+13529.7s 965 2025-03-24 16:53:30,243 INFO     Training average negative_sample_loss at step 27600: 0.024004
+13529.7s 966 2025-03-24 16:53:30,244 INFO     Training average loss at step 27600: 0.019762
+13578.7s 967 2025-03-24 16:54:19,191 INFO     Training average positive_sample_loss at step 27700: 0.015234
+13578.7s 968 2025-03-24 16:54:19,194 INFO     Training average negative_sample_loss at step 27700: 0.024025
+13578.7s 969 2025-03-24 16:54:19,194 INFO     Training average loss at step 27700: 0.019629
+13627.7s 970 2025-03-24 16:55:08,208 INFO     Training average positive_sample_loss at step 27800: 0.013577
+13627.7s 971 2025-03-24 16:55:08,211 INFO     Training average negative_sample_loss at step 27800: 0.023760
+13627.7s 972 2025-03-24 16:55:08,211 INFO     Training average loss at step 27800: 0.018669
+13675.9s 973 2025-03-24 16:55:56,376 INFO     Training average positive_sample_loss at step 27900: 0.016748
+13675.9s 974 2025-03-24 16:55:56,377 INFO     Training average negative_sample_loss at step 27900: 0.023586
+13675.9s 975 2025-03-24 16:55:56,378 INFO     Training average loss at step 27900: 0.020167
+13724.1s 976 2025-03-24 16:56:44,549 INFO     Training average positive_sample_loss at step 28000: 0.015800
+13724.1s 977 2025-03-24 16:56:44,551 INFO     Training average negative_sample_loss at step 28000: 0.023778
+13724.1s 978 2025-03-24 16:56:44,551 INFO     Training average loss at step 28000: 0.019789
+13773.1s 979 2025-03-24 16:57:33,597 INFO     Training average positive_sample_loss at step 28100: 0.015274
+13773.1s 980 2025-03-24 16:57:33,599 INFO     Training average negative_sample_loss at step 28100: 0.024024
+13773.1s 981 2025-03-24 16:57:33,600 INFO     Training average loss at step 28100: 0.019649
+13821.3s 982 2025-03-24 16:58:21,820 INFO     Training average positive_sample_loss at step 28200: 0.015660
+13821.3s 983 2025-03-24 16:58:21,821 INFO     Training average negative_sample_loss at step 28200: 0.023708
+13821.3s 984 2025-03-24 16:58:21,822 INFO     Training average loss at step 28200: 0.019684
+13869.4s 985 2025-03-24 16:59:09,859 INFO     Training average positive_sample_loss at step 28300: 0.013951
+13869.4s 986 2025-03-24 16:59:09,860 INFO     Training average negative_sample_loss at step 28300: 0.023815
+13869.4s 987 2025-03-24 16:59:09,861 INFO     Training average loss at step 28300: 0.018883
+13917.5s 988 2025-03-24 16:59:57,966 INFO     Training average positive_sample_loss at step 28400: 0.016943
+13917.5s 989 2025-03-24 16:59:57,967 INFO     Training average negative_sample_loss at step 28400: 0.024118
+13917.5s 990 2025-03-24 16:59:57,968 INFO     Training average loss at step 28400: 0.020531
+13965.6s 991 2025-03-24 17:00:46,124 INFO     Training average positive_sample_loss at step 28500: 0.013346
+13965.6s 992 2025-03-24 17:00:46,125 INFO     Training average negative_sample_loss at step 28500: 0.023937
+13965.6s 993 2025-03-24 17:00:46,126 INFO     Training average loss at step 28500: 0.018642
+14015.5s 994 2025-03-24 17:01:35,989 INFO     Training average positive_sample_loss at step 28600: 0.013290
+14015.5s 995 2025-03-24 17:01:35,992 INFO     Training average negative_sample_loss at step 28600: 0.023702
+14015.5s 996 2025-03-24 17:01:35,992 INFO     Training average loss at step 28600: 0.018496
+14063.7s 997 2025-03-24 17:02:24,221 INFO     Training average positive_sample_loss at step 28700: 0.013692
+14063.7s 998 2025-03-24 17:02:24,222 INFO     Training average negative_sample_loss at step 28700: 0.023872
+14063.7s 999 2025-03-24 17:02:24,223 INFO     Training average loss at step 28700: 0.018782
+14111.8s 1000 2025-03-24 17:03:12,277 INFO     Training average positive_sample_loss at step 28800: 0.014030
+14111.8s 1001 2025-03-24 17:03:12,278 INFO     Training average negative_sample_loss at step 28800: 0.023854
+14111.8s 1002 2025-03-24 17:03:12,279 INFO     Training average loss at step 28800: 0.018942
+14159.8s 1003 2025-03-24 17:04:00,318 INFO     Training average positive_sample_loss at step 28900: 0.015658
+14159.8s 1004 2025-03-24 17:04:00,319 INFO     Training average negative_sample_loss at step 28900: 0.023670
+14159.8s 1005 2025-03-24 17:04:00,320 INFO     Training average loss at step 28900: 0.019664
+14208.8s 1006 2025-03-24 17:04:49,249 INFO     Training average positive_sample_loss at step 29000: 0.015024
+14208.8s 1007 2025-03-24 17:04:49,251 INFO     Training average negative_sample_loss at step 29000: 0.023622
+14208.8s 1008 2025-03-24 17:04:49,252 INFO     Training average loss at step 29000: 0.019323
+14256.8s 1009 2025-03-24 17:05:37,306 INFO     Training average positive_sample_loss at step 29100: 0.014523
+14256.8s 1010 2025-03-24 17:05:37,307 INFO     Training average negative_sample_loss at step 29100: 0.023537
+14256.8s 1011 2025-03-24 17:05:37,308 INFO     Training average loss at step 29100: 0.019030
+14305.2s 1012 2025-03-24 17:06:25,681 INFO     Training average positive_sample_loss at step 29200: 0.013806
+14305.2s 1013 2025-03-24 17:06:25,682 INFO     Training average negative_sample_loss at step 29200: 0.023903
+14305.2s 1014 2025-03-24 17:06:25,683 INFO     Training average loss at step 29200: 0.018855
+14354.3s 1015 2025-03-24 17:07:14,769 INFO     Training average positive_sample_loss at step 29300: 0.013397
+14354.3s 1016 2025-03-24 17:07:14,772 INFO     Training average negative_sample_loss at step 29300: 0.023803
+14354.3s 1017 2025-03-24 17:07:14,773 INFO     Training average loss at step 29300: 0.018600
+14403.1s 1018 2025-03-24 17:08:03,535 INFO     Training average positive_sample_loss at step 29400: 0.016598
+14403.1s 1019 2025-03-24 17:08:03,537 INFO     Training average negative_sample_loss at step 29400: 0.023933
+14403.1s 1020 2025-03-24 17:08:03,537 INFO     Training average loss at step 29400: 0.020265
+14453.0s 1021 2025-03-24 17:08:53,392 INFO     Training average positive_sample_loss at step 29500: 0.013382
+14453.0s 1022 2025-03-24 17:08:53,395 INFO     Training average negative_sample_loss at step 29500: 0.023637
+14453.0s 1023 2025-03-24 17:08:53,396 INFO     Training average loss at step 29500: 0.018509
+14501.5s 1024 2025-03-24 17:09:42,033 INFO     Training average positive_sample_loss at step 29600: 0.019248
+14501.5s 1025 2025-03-24 17:09:42,034 INFO     Training average negative_sample_loss at step 29600: 0.023766
+14501.5s 1026 2025-03-24 17:09:42,035 INFO     Training average loss at step 29600: 0.021507
+14550.0s 1027 2025-03-24 17:10:30,495 INFO     Training average positive_sample_loss at step 29700: 0.013990
+14550.0s 1028 2025-03-24 17:10:30,496 INFO     Training average negative_sample_loss at step 29700: 0.023574
+14550.0s 1029 2025-03-24 17:10:30,496 INFO     Training average loss at step 29700: 0.018782
+14598.6s 1030 2025-03-24 17:11:19,034 INFO     Training average positive_sample_loss at step 29800: 0.013053
+14598.6s 1031 2025-03-24 17:11:19,035 INFO     Training average negative_sample_loss at step 29800: 0.023655
+14598.6s 1032 2025-03-24 17:11:19,036 INFO     Training average loss at step 29800: 0.018354
+14647.8s 1033 2025-03-24 17:12:08,278 INFO     Training average positive_sample_loss at step 29900: 0.013900
+14647.8s 1034 2025-03-24 17:12:08,281 INFO     Training average negative_sample_loss at step 29900: 0.023744
+14647.8s 1035 2025-03-24 17:12:08,281 INFO     Training average loss at step 29900: 0.018822
+14696.5s 1036 2025-03-24 17:12:56,949 INFO     Training average positive_sample_loss at step 30000: 0.015707
+14696.5s 1037 2025-03-24 17:12:56,950 INFO     Training average negative_sample_loss at step 30000: 0.023634
+14696.5s 1038 2025-03-24 17:12:56,951 INFO     Training average loss at step 30000: 0.019671
+14747.2s 1039 2025-03-24 17:13:47,659 INFO     Evaluating on Test Dataset...
+100%|██████████| 21951/21951 [09:20<00:00, 39.16it/s]
+15307.8s 1064 2025-03-24 17:23:08,302 INFO     Test 1p MRR at step 30099: 0.361147
+15307.8s 1065 2025-03-24 17:23:08,303 INFO     Test 1p HITS1 at step 30099: 0.267117
+15307.8s 1066 2025-03-24 17:23:08,304 INFO     Test 1p HITS3 at step 30099: 0.395800
+15307.8s 1067 2025-03-24 17:23:08,305 INFO     Test 1p HITS10 at step 30099: 0.548893
+15307.8s 1068 2025-03-24 17:23:08,305 INFO     Test 1p num_queries at step 30099: 22804.000000
+15307.8s 1069 2025-03-24 17:23:08,312 INFO     Test 2p MRR at step 30099: 0.085194
+15307.8s 1070 2025-03-24 17:23:08,315 INFO     Test 2p HITS1 at step 30099: 0.038474
+15307.8s 1071 2025-03-24 17:23:08,315 INFO     Test 2p HITS3 at step 30099: 0.083798
+15307.8s 1072 2025-03-24 17:23:08,316 INFO     Test 2p HITS10 at step 30099: 0.175475
+15307.8s 1073 2025-03-24 17:23:08,316 INFO     Test 2p num_queries at step 30099: 5000.000000
+15307.8s 1074 2025-03-24 17:23:08,317 INFO     Test 3p MRR at step 30099: 0.084612
+15307.8s 1075 2025-03-24 17:23:08,319 INFO     Test 3p HITS1 at step 30099: 0.040329
+15307.8s 1076 2025-03-24 17:23:08,320 INFO     Test 3p HITS3 at step 30099: 0.082418
+15307.8s 1077 2025-03-24 17:23:08,320 INFO     Test 3p HITS10 at step 30099: 0.166261
+15307.8s 1078 2025-03-24 17:23:08,321 INFO     Test 3p num_queries at step 30099: 5000.000000
+15307.8s 1079 2025-03-24 17:23:08,322 INFO     Test 2i MRR at step 30099: 0.222815
+15307.8s 1080 2025-03-24 17:23:08,325 INFO     Test 2i HITS1 at step 30099: 0.138894
+15307.8s 1081 2025-03-24 17:23:08,326 INFO     Test 2i HITS3 at step 30099: 0.238172
+15307.8s 1082 2025-03-24 17:23:08,326 INFO     Test 2i HITS10 at step 30099: 0.399019
+15307.8s 1083 2025-03-24 17:23:08,327 INFO     Test 2i num_queries at step 30099: 5000.000000
+15307.8s 1084 2025-03-24 17:23:08,328 INFO     Test 3i MRR at step 30099: 0.334845
+15307.8s 1085 2025-03-24 17:23:08,329 INFO     Test 3i HITS1 at step 30099: 0.235683
+15307.8s 1086 2025-03-24 17:23:08,330 INFO     Test 3i HITS3 at step 30099: 0.367622
+15307.8s 1087 2025-03-24 17:23:08,331 INFO     Test 3i HITS10 at step 30099: 0.537198
+15307.8s 1088 2025-03-24 17:23:08,332 INFO     Test 3i num_queries at step 30099: 5000.000000
+15307.8s 1089 2025-03-24 17:23:08,333 INFO     Test ip MRR at step 30099: 0.092885
+15307.8s 1090 2025-03-24 17:23:08,334 INFO     Test ip HITS1 at step 30099: 0.045670
+15307.8s 1091 2025-03-24 17:23:08,335 INFO     Test ip HITS3 at step 30099: 0.094699
+15307.8s 1092 2025-03-24 17:23:08,339 INFO     Test ip HITS10 at step 30099: 0.179411
+15307.8s 1093 2025-03-24 17:23:08,339 INFO     Test ip num_queries at step 30099: 5000.000000
+15307.8s 1094 2025-03-24 17:23:08,341 INFO     Test pi MRR at step 30099: 0.174504
+15307.8s 1095 2025-03-24 17:23:08,342 INFO     Test pi HITS1 at step 30099: 0.106194
+15307.8s 1096 2025-03-24 17:23:08,344 INFO     Test pi HITS3 at step 30099: 0.187633
+15307.8s 1097 2025-03-24 17:23:08,345 INFO     Test pi HITS10 at step 30099: 0.308664
+15307.8s 1098 2025-03-24 17:23:08,345 INFO     Test pi num_queries at step 30099: 5000.000000
+15307.8s 1099 2025-03-24 17:23:08,346 INFO     Test 2in MRR at step 30099: 0.054051
+15307.8s 1100 2025-03-24 17:23:08,349 INFO     Test 2in HITS1 at step 30099: 0.019444
+15307.8s 1101 2025-03-24 17:23:08,350 INFO     Test 2in HITS3 at step 30099: 0.044652
+15307.8s 1102 2025-03-24 17:23:08,351 INFO     Test 2in HITS10 at step 30099: 0.118190
+15307.8s 1103 2025-03-24 17:23:08,352 INFO     Test 2in num_queries at step 30099: 5000.000000
+15307.8s 1104 2025-03-24 17:23:08,352 INFO     Test 3in MRR at step 30099: 0.070796
+15307.8s 1105 2025-03-24 17:23:08,354 INFO     Test 3in HITS1 at step 30099: 0.023118
+15307.8s 1106 2025-03-24 17:23:08,355 INFO     Test 3in HITS3 at step 30099: 0.061976
+15307.8s 1107 2025-03-24 17:23:08,355 INFO     Test 3in HITS10 at step 30099: 0.162645
+15307.8s 1108 2025-03-24 17:23:08,356 INFO     Test 3in num_queries at step 30099: 5000.000000
+15307.8s 1109 2025-03-24 17:23:08,357 INFO     Test inp MRR at step 30099: 0.065758
+15307.8s 1110 2025-03-24 17:23:08,361 INFO     Test inp HITS1 at step 30099: 0.024192
+15307.8s 1111 2025-03-24 17:23:08,362 INFO     Test inp HITS3 at step 30099: 0.059461
+15307.8s 1112 2025-03-24 17:23:08,362 INFO     Test inp HITS10 at step 30099: 0.143242
+15307.8s 1113 2025-03-24 17:23:08,363 INFO     Test inp num_queries at step 30099: 5000.000000
+15307.8s 1114 2025-03-24 17:23:08,364 INFO     Test pin MRR at step 30099: 0.035653
+15307.8s 1115 2025-03-24 17:23:08,367 INFO     Test pin HITS1 at step 30099: 0.010654
+15307.8s 1116 2025-03-24 17:23:08,368 INFO     Test pin HITS3 at step 30099: 0.025291
+15307.8s 1117 2025-03-24 17:23:08,369 INFO     Test pin HITS10 at step 30099: 0.080363
+15307.8s 1118 2025-03-24 17:23:08,370 INFO     Test pin num_queries at step 30099: 5000.000000
+15307.8s 1119 2025-03-24 17:23:08,371 INFO     Test pni MRR at step 30099: 0.037574
+15307.8s 1120 2025-03-24 17:23:08,372 INFO     Test pni HITS1 at step 30099: 0.012248
+15307.8s 1121 2025-03-24 17:23:08,373 INFO     Test pni HITS3 at step 30099: 0.027229
+15307.8s 1122 2025-03-24 17:23:08,374 INFO     Test pni HITS10 at step 30099: 0.080058
+15307.8s 1123 2025-03-24 17:23:08,375 INFO     Test pni num_queries at step 30099: 5000.000000
+15307.8s 1124 2025-03-24 17:23:08,376 INFO     Test 2u-DNF MRR at step 30099: 0.104638
+15307.8s 1125 2025-03-24 17:23:08,380 INFO     Test 2u-DNF HITS1 at step 30099: 0.058835
+15307.8s 1126 2025-03-24 17:23:08,380 INFO     Test 2u-DNF HITS3 at step 30099: 0.106205
+15307.8s 1127 2025-03-24 17:23:08,382 INFO     Test 2u-DNF HITS10 at step 30099: 0.191875
+15307.8s 1128 2025-03-24 17:23:08,383 INFO     Test 2u-DNF num_queries at step 30099: 5000.000000
+15307.8s 1129 2025-03-24 17:23:08,384 INFO     Test up-DNF MRR at step 30099: 0.080466
+15307.8s 1130 2025-03-24 17:23:08,385 INFO     Test up-DNF HITS1 at step 30099: 0.035476
+15307.8s 1131 2025-03-24 17:23:08,387 INFO     Test up-DNF HITS3 at step 30099: 0.078634
+15307.8s 1132 2025-03-24 17:23:08,388 INFO     Test up-DNF HITS10 at step 30099: 0.166070
+15307.8s 1133 2025-03-24 17:23:08,389 INFO     Test up-DNF num_queries at step 30099: 5000.000000
+15307.8s 1134 2025-03-24 17:23:08,390 INFO     Test average MRR at step 30099: 0.128924
+15307.8s 1135 2025-03-24 17:23:08,392 INFO     Test average HITS1 at step 30099: 0.075452
+15307.8s 1136 2025-03-24 17:23:08,393 INFO     Test average HITS3 at step 30099: 0.132399
+15307.8s 1137 2025-03-24 17:23:08,396 INFO     Test average HITS10 at step 30099: 0.232669
+15307.8s 1138 2025-03-24 17:23:08,396 INFO     Training finished!!
+15321.5s 1139 /usr/local/lib/python3.10/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+15321.5s 1140 warn(
+15321.5s 1141 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+15322.7s 1142 [NbConvertApp] Writing 196790 bytes to __notebook__.ipynb
+15324.0s 1143 /usr/local/lib/python3.10/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+15324.0s 1144 warn(
+15324.0s 1145 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+15325.0s 1146 [NbConvertApp] Writing 643959 bytes to __results__.html
