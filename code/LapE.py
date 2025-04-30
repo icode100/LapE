@@ -97,13 +97,13 @@ class KGReasoningLapE(nn.Module):
                                                  self.projection_regularizer,
                                                  num_layers)
         self.union_net = LaplaceUnion(self.entity_dim, self.projection_regularizer, drop)
-    def sample_laplace(self, mu, b):
-        # u ~ Uniform(-0.5, 0.5)
-        u = torch.rand_like(mu) - 0.5
-        # z ~ Laplace(0, 1)
-        z = -torch.sign(u) * torch.log(1 - 2 * torch.abs(u) + 1e-12)
-        # reparameterized sample
-        return mu + b * z
+    # def sample_laplace(self, mu, b):
+    #     # u ~ Uniform(-0.5, 0.5)
+    #     u = torch.rand_like(mu) - 0.5
+    #     # z ~ Laplace(0, 1)
+    #     z = -torch.sign(u) * torch.log(1 - 2 * torch.abs(u) + 1e-12)
+    #     # reparameterized sample
+    #     return mu + b * z
     def embed_query_lape(self, queries, query_structure, idx):
         '''
         Iteratively embeds a batch of queries with the same structure using Laplace-based embeddings.
@@ -126,7 +126,7 @@ class KGReasoningLapE(nn.Module):
                 ent_embedding = torch.index_select(self.entity_embedding, dim=0, index=queries[:, idx])
                 # Split the entity embedding into mean (mu) and scale (b)
                 mu_embedding, b_embedding = torch.chunk(ent_embedding, 2, dim=-1)
-                mu_embedding = self.sample_laplace(mu_embedding, b_embedding)
+                # mu_embedding = self.sample_laplace(mu_embedding, b_embedding)
                 idx += 1
             else:
                 mu_embedding, b_embedding, idx = self.embed_query_lape(queries, query_structure[0], idx)
@@ -188,7 +188,7 @@ class KGReasoningLapE(nn.Module):
         mu_embedding, b_embedding = torch.chunk(entity_embedding, 2, dim=-1)
         # Unpack the query distribution (assumed to be in the same format: (mu, b))
         query_mu, query_b = query_dist
-        query_mu = self.sample_laplace(query_mu, query_b)
+        # query_mu = self.sample_laplace(query_mu, query_b)
         # Compute the Wasserstein-1 distance between the Laplace distributions:
         # Compute elementwise absolute differences for both μ and b, then sum over the embedding dimensions.
         distance = torch.abs(mu_embedding - query_mu) + torch.abs(b_embedding - query_b)
